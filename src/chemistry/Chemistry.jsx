@@ -18,7 +18,7 @@ class Chemistry extends Component {
     return (
       <div className="game-board">
         <Element name={element.name} symbol={element.symbol} />
-        <Options optionsStore={periodicTable} currentElement={element} />
+        <Options optionsSource={periodicTable} correctOption={element} />
       </div>
     );
   }

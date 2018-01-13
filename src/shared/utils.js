@@ -3,6 +3,17 @@ export function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+export function fillWithRandomElements(initialElements, source, size) {
+  const randomArray = [].concat(initialElements);
+  while (randomArray.length < size) {
+    const randomOption = source[getRandomIntInclusive(0, source.length)];
+    if (randomArray.find(selectedOption => selectedOption.id !== randomOption.id)) {
+      randomArray.push(randomOption);
+    }
+  }
+  return randomArray;
+}
+
 export function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));

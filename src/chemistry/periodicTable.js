@@ -1,5 +1,6 @@
 export default [
   {
+    "id": "H",
     "name": "Hydrogen",
     "appearance": "colorless gas",
     "atomic_mass": 1.008,
@@ -25,6 +26,7 @@ export default [
     ]
   },
   {
+    "id": "He",
     "name": "Helium",
     "appearance": "colorless gas, exhibiting a red-orange glow when placed in a high-voltage electric field",
     "atomic_mass": 4.0026022,
@@ -50,6 +52,7 @@ export default [
     ]
   },
   {
+    "id": "Li",
     "name": "Lithium",
     "appearance": "silvery-white",
     "atomic_mass": 6.94,
@@ -76,6 +79,7 @@ export default [
     ]
   },
   {
+    "id": "Be",
     "name": "Beryllium",
     "appearance": "white-gray metallic",
     "atomic_mass": 9.01218315,
@@ -102,6 +106,7 @@ export default [
     ]
   },
   {
+    "id": "B",
     "name": "Boron",
     "appearance": "black-brown",
     "atomic_mass": 10.81,
@@ -128,6 +133,7 @@ export default [
     ]
   },
   {
+    "id": "C",
     "name": "Carbon",
     "appearance": null,
     "atomic_mass": 12.011,
@@ -154,6 +160,7 @@ export default [
     ]
   },
   {
+    "id": "N",
     "name": "Nitrogen",
     "appearance": "colorless gas, liquid or solid",
     "atomic_mass": 14.007,
@@ -180,6 +187,7 @@ export default [
     ]
   },
   {
+    "id": "O",
     "name": "Oxygen",
     "appearance": null,
     "atomic_mass": 15.999,
@@ -206,6 +214,7 @@ export default [
     ]
   },
   {
+    "id": "F",
     "name": "Fluorine",
     "appearance": null,
     "atomic_mass": 18.9984031636,
@@ -232,6 +241,7 @@ export default [
     ]
   },
   {
+    "id": "Ne",
     "name": "Neon",
     "appearance": "colorless gas exhibiting an orange-red glow when placed in a high voltage electric field",
     "atomic_mass": 20.17976,
@@ -258,6 +268,7 @@ export default [
     ]
   },
   {
+    "id": "Na",
     "name": "Sodium",
     "appearance": "silvery white metallic",
     "atomic_mass": 22.989769282,
@@ -285,6 +296,7 @@ export default [
     ]
   },
   {
+    "id": "Mg",
     "name": "Magnesium",
     "appearance": "shiny grey solid",
     "atomic_mass": 24.305,
@@ -312,6 +324,7 @@ export default [
     ]
   },
   {
+    "id": "Al",
     "name": "Aluminium",
     "appearance": "silvery gray metallic",
     "atomic_mass": 26.98153857,
@@ -339,6 +352,7 @@ export default [
     ]
   },
   {
+    "id": "Si",
     "name": "Silicon",
     "appearance": "crystalline, reflective with bluish-tinged faces",
     "atomic_mass": 28.085,
@@ -366,6 +380,7 @@ export default [
     ]
   },
   {
+    "id": "P",
     "name": "Phosphorus",
     "appearance": "colourless, waxy white, yellow, scarlet, red, violet, black",
     "atomic_mass": 30.9737619985,
@@ -393,6 +408,7 @@ export default [
     ]
   },
   {
+    "id": "S",
     "name": "Sulfur",
     "appearance": "lemon yellow sintered microcrystals",
     "atomic_mass": 32.06,
@@ -420,6 +436,7 @@ export default [
     ]
   },
   {
+    "id": "Cl",
     "name": "Chlorine",
     "appearance": "pale yellow-green gas",
     "atomic_mass": 35.45,
@@ -447,6 +464,7 @@ export default [
     ]
   },
   {
+    "id": "Ar",
     "name": "Argon",
     "appearance": "colorless gas exhibiting a lilac/violet glow when placed in a high voltage electric field",
     "atomic_mass": 39.9481,
@@ -474,6 +492,7 @@ export default [
     ]
   },
   {
+    "id": "K",
     "name": "Potassium",
     "appearance": "silvery gray",
     "atomic_mass": 39.09831,
@@ -502,6 +521,7 @@ export default [
     ]
   },
   {
+    "id": "Ca",
     "name": "Calcium",
     "appearance": null,
     "atomic_mass": 40.0784,
@@ -530,6 +550,7 @@ export default [
     ]
   },
   {
+    "id": "Sc",
     "name": "Scandium",
     "appearance": "silvery white",
     "atomic_mass": 44.9559085,
@@ -558,6 +579,7 @@ export default [
     ]
   },
   {
+    "id": "Ti",
     "name": "Titanium",
     "appearance": "silvery grey-white metallic",
     "atomic_mass": 47.8671,
@@ -586,6 +608,7 @@ export default [
     ]
   },
   {
+    "id": "V",
     "name": "Vanadium",
     "appearance": "blue-silver-grey metal",
     "atomic_mass": 50.94151,
@@ -614,6 +637,7 @@ export default [
     ]
   },
   {
+    "id": "Cr",
     "name": "Chromium",
     "appearance": "silvery metallic",
     "atomic_mass": 51.99616,
@@ -642,6 +666,7 @@ export default [
     ]
   },
   {
+    "id": "Mn",
     "name": "Manganese",
     "appearance": "silvery metallic",
     "atomic_mass": 54.9380443,
@@ -670,6 +695,7 @@ export default [
     ]
   },
   {
+    "id": "Fe",
     "name": "Iron",
     "appearance": "lustrous metallic with a grayish tinge",
     "atomic_mass": 55.8452,
@@ -698,6 +724,7 @@ export default [
     ]
   },
   {
+    "id": "Co",
     "name": "Cobalt",
     "appearance": "hard lustrous gray metal",
     "atomic_mass": 58.9331944,
@@ -726,6 +753,7 @@ export default [
     ]
   },
   {
+    "id": "Ni",
     "name": "Nickel",
     "appearance": "lustrous, metallic, and silver with a gold tinge",
     "atomic_mass": 58.69344,
@@ -754,6 +782,7 @@ export default [
     ]
   },
   {
+    "id": "Cu",
     "name": "Copper",
     "appearance": "red-orange metallic luster",
     "atomic_mass": 63.5463,
@@ -782,6 +811,7 @@ export default [
     ]
   },
   {
+    "id": "Zn",
     "name": "Zinc",
     "appearance": "silver-gray",
     "atomic_mass": 65.382,
@@ -810,6 +840,7 @@ export default [
     ]
   },
   {
+    "id": "Ga",
     "name": "Gallium",
     "appearance": "silver-white",
     "atomic_mass": 69.7231,
@@ -838,6 +869,7 @@ export default [
     ]
   },
   {
+    "id": "Ge",
     "name": "Germanium",
     "appearance": "grayish-white",
     "atomic_mass": 72.6308,
@@ -866,6 +898,7 @@ export default [
     ]
   },
   {
+    "id": "As",
     "name": "Arsenic",
     "appearance": "metallic grey",
     "atomic_mass": 74.9215956,
@@ -894,6 +927,7 @@ export default [
     ]
   },
   {
+    "id": "Se",
     "name": "Selenium",
     "appearance": "black, red, and gray (not pictured) allotropes",
     "atomic_mass": 78.9718,
@@ -922,6 +956,7 @@ export default [
     ]
   },
   {
+    "id": "Br",
     "name": "Bromine",
     "appearance": null,
     "atomic_mass": 79.904,
@@ -950,6 +985,7 @@ export default [
     ]
   },
   {
+    "id": "Kr",
     "name": "Krypton",
     "appearance": "colorless gas, exhibiting a whitish glow in a high electric field",
     "atomic_mass": 83.7982,
@@ -978,6 +1014,7 @@ export default [
     ]
   },
   {
+    "id": "Rb",
     "name": "Rubidium",
     "appearance": "grey white",
     "atomic_mass": 85.46783,
@@ -1007,6 +1044,7 @@ export default [
     ]
   },
   {
+    "id": "Sr",
     "name": "Strontium",
     "appearance": null,
     "atomic_mass": 87.621,
@@ -1036,6 +1074,7 @@ export default [
     ]
   },
   {
+    "id": "Y",
     "name": "Yttrium",
     "appearance": "silvery white",
     "atomic_mass": 88.905842,
@@ -1065,6 +1104,7 @@ export default [
     ]
   },
   {
+    "id": "Zr",
     "name": "Zirconium",
     "appearance": "silvery white",
     "atomic_mass": 91.2242,
@@ -1094,6 +1134,7 @@ export default [
     ]
   },
   {
+    "id": "Nb",
     "name": "Niobium",
     "appearance": "gray metallic, bluish when oxidized",
     "atomic_mass": 92.906372,
@@ -1123,6 +1164,7 @@ export default [
     ]
   },
   {
+    "id": "Mo",
     "name": "Molybdenum",
     "appearance": "gray metallic",
     "atomic_mass": 95.951,
@@ -1152,6 +1194,7 @@ export default [
     ]
   },
   {
+    "id": "Tc",
     "name": "Technetium",
     "appearance": "shiny gray metal",
     "atomic_mass": 98,
@@ -1181,6 +1224,7 @@ export default [
     ]
   },
   {
+    "id": "Ru",
     "name": "Ruthenium",
     "appearance": "silvery white metallic",
     "atomic_mass": 101.072,
@@ -1210,6 +1254,7 @@ export default [
     ]
   },
   {
+    "id": "Rh",
     "name": "Rhodium",
     "appearance": "silvery white metallic",
     "atomic_mass": 102.905502,
@@ -1239,6 +1284,7 @@ export default [
     ]
   },
   {
+    "id": "Pd",
     "name": "Palladium",
     "appearance": "silvery white",
     "atomic_mass": 106.421,
@@ -1267,6 +1313,7 @@ export default [
     ]
   },
   {
+    "id": "Ag",
     "name": "Silver",
     "appearance": "lustrous white metal",
     "atomic_mass": 107.86822,
@@ -1296,6 +1343,7 @@ export default [
     ]
   },
   {
+    "id": "Cd",
     "name": "Cadmium",
     "appearance": "silvery bluish-gray metallic",
     "atomic_mass": 112.4144,
@@ -1325,6 +1373,7 @@ export default [
     ]
   },
   {
+    "id": "In",
     "name": "Indium",
     "appearance": "silvery lustrous gray",
     "atomic_mass": 114.8181,
@@ -1354,6 +1403,7 @@ export default [
     ]
   },
   {
+    "id": "Sn",
     "name": "Tin",
     "appearance": "silvery-white (beta, β) or gray (alpha, α)",
     "atomic_mass": 118.7107,
@@ -1383,6 +1433,7 @@ export default [
     ]
   },
   {
+    "id": "Sb",
     "name": "Antimony",
     "appearance": "silvery lustrous gray",
     "atomic_mass": 121.7601,
@@ -1412,6 +1463,7 @@ export default [
     ]
   },
   {
+    "id": "Te",
     "name": "Tellurium",
     "appearance": null,
     "atomic_mass": 127.603,
@@ -1441,6 +1493,7 @@ export default [
     ]
   },
   {
+    "id": "I",
     "name": "Iodine",
     "appearance": "lustrous metallic gray, violet as a gas",
     "atomic_mass": 126.904473,
@@ -1470,6 +1523,7 @@ export default [
     ]
   },
   {
+    "id": "Xe",
     "name": "Xenon",
     "appearance": "colorless gas, exhibiting a blue glow when placed in a high voltage electric field",
     "atomic_mass": 131.2936,
@@ -1499,6 +1553,7 @@ export default [
     ]
   },
   {
+    "id": "Cs",
     "name": "Cesium",
     "appearance": "silvery gold",
     "atomic_mass": 132.905451966,
@@ -1529,6 +1584,7 @@ export default [
     ]
   },
   {
+    "id": "Ba",
     "name": "Barium",
     "appearance": null,
     "atomic_mass": 137.3277,
@@ -1559,6 +1615,7 @@ export default [
     ]
   },
   {
+    "id": "La",
     "name": "Lanthanum",
     "appearance": "silvery white",
     "atomic_mass": 138.905477,
@@ -1589,6 +1646,7 @@ export default [
     ]
   },
   {
+    "id": "Ce",
     "name": "Cerium",
     "appearance": "silvery white",
     "atomic_mass": 140.1161,
@@ -1619,6 +1677,7 @@ export default [
     ]
   },
   {
+    "id": "Pr",
     "name": "Praseodymium",
     "appearance": "grayish white",
     "atomic_mass": 140.907662,
@@ -1649,6 +1708,7 @@ export default [
     ]
   },
   {
+    "id": "Nd",
     "name": "Neodymium",
     "appearance": "silvery white",
     "atomic_mass": 144.2423,
@@ -1679,6 +1739,7 @@ export default [
     ]
   },
   {
+    "id": "Pm",
     "name": "Promethium",
     "appearance": "metallic",
     "atomic_mass": 145,
@@ -1709,6 +1770,7 @@ export default [
     ]
   },
   {
+    "id": "Sm",
     "name": "Samarium",
     "appearance": "silvery white",
     "atomic_mass": 150.362,
@@ -1739,6 +1801,7 @@ export default [
     ]
   },
   {
+    "id": "Eu",
     "name": "Europium",
     "appearance": null,
     "atomic_mass": 151.9641,
@@ -1769,6 +1832,7 @@ export default [
     ]
   },
   {
+    "id": "Gd",
     "name": "Gadolinium",
     "appearance": "silvery white",
     "atomic_mass": 157.253,
@@ -1799,6 +1863,7 @@ export default [
     ]
   },
   {
+    "id": "Tb",
     "name": "Terbium",
     "appearance": "silvery white",
     "atomic_mass": 158.925352,
@@ -1829,6 +1894,7 @@ export default [
     ]
   },
   {
+    "id": "Dy",
     "name": "Dysprosium",
     "appearance": "silvery white",
     "atomic_mass": 162.5001,
@@ -1859,6 +1925,7 @@ export default [
     ]
   },
   {
+    "id": "Ho",
     "name": "Holmium",
     "appearance": "silvery white",
     "atomic_mass": 164.930332,
@@ -1889,6 +1956,7 @@ export default [
     ]
   },
   {
+    "id": "Er",
     "name": "Erbium",
     "appearance": "silvery white",
     "atomic_mass": 167.2593,
@@ -1919,6 +1987,7 @@ export default [
     ]
   },
   {
+    "id": "Tm",
     "name": "Thulium",
     "appearance": "silvery gray",
     "atomic_mass": 168.934222,
@@ -1949,6 +2018,7 @@ export default [
     ]
   },
   {
+    "id": "Yb",
     "name": "Ytterbium",
     "appearance": null,
     "atomic_mass": 173.0451,
@@ -1979,6 +2049,7 @@ export default [
     ]
   },
   {
+    "id": "Lu",
     "name": "Lutetium",
     "appearance": "silvery white",
     "atomic_mass": 174.96681,
@@ -2009,6 +2080,7 @@ export default [
     ]
   },
   {
+    "id": "Hf",
     "name": "Hafnium",
     "appearance": "steel gray",
     "atomic_mass": 178.492,
@@ -2039,6 +2111,7 @@ export default [
     ]
   },
   {
+    "id": "Ta",
     "name": "Tantalum",
     "appearance": "gray blue",
     "atomic_mass": 180.947882,
@@ -2069,6 +2142,7 @@ export default [
     ]
   },
   {
+    "id": "W",
     "name": "Tungsten",
     "appearance": "grayish white, lustrous",
     "atomic_mass": 183.841,
@@ -2099,6 +2173,7 @@ export default [
     ]
   },
   {
+    "id": "Re",
     "name": "Rhenium",
     "appearance": "silvery-grayish",
     "atomic_mass": 186.2071,
@@ -2129,6 +2204,7 @@ export default [
     ]
   },
   {
+    "id": "Os",
     "name": "Osmium",
     "appearance": "silvery, blue cast",
     "atomic_mass": 190.233,
@@ -2159,6 +2235,7 @@ export default [
     ]
   },
   {
+    "id": "Ir",
     "name": "Iridium",
     "appearance": "silvery white",
     "atomic_mass": 192.2173,
@@ -2189,6 +2266,7 @@ export default [
     ]
   },
   {
+    "id": "Pt",
     "name": "Platinum",
     "appearance": "silvery white",
     "atomic_mass": 195.0849,
@@ -2219,6 +2297,7 @@ export default [
     ]
   },
   {
+    "id": "Au",
     "name": "Gold",
     "appearance": "metallic yellow",
     "atomic_mass": 196.9665695,
@@ -2249,6 +2328,7 @@ export default [
     ]
   },
   {
+    "id": "Hg",
     "name": "Mercury",
     "appearance": "silvery",
     "atomic_mass": 200.5923,
@@ -2279,6 +2359,7 @@ export default [
     ]
   },
   {
+    "id": "Tl",
     "name": "Thallium",
     "appearance": "silvery white",
     "atomic_mass": 204.38,
@@ -2309,6 +2390,7 @@ export default [
     ]
   },
   {
+    "id": "Pb",
     "name": "Lead",
     "appearance": "metallic gray",
     "atomic_mass": 207.21,
@@ -2339,6 +2421,7 @@ export default [
     ]
   },
   {
+    "id": "Bi",
     "name": "Bismuth",
     "appearance": "lustrous silver",
     "atomic_mass": 208.980401,
@@ -2369,6 +2452,7 @@ export default [
     ]
   },
   {
+    "id": "Po",
     "name": "Polonium",
     "appearance": "silvery",
     "atomic_mass": 209,
@@ -2399,6 +2483,7 @@ export default [
     ]
   },
   {
+    "id": "At",
     "name": "Astatine",
     "appearance": "unknown, probably metallic",
     "atomic_mass": 210,
@@ -2429,6 +2514,7 @@ export default [
     ]
   },
   {
+    "id": "Rn",
     "name": "Radon",
     "appearance": "colorless gas, occasionally glows green or red in discharge tubes",
     "atomic_mass": 222,
@@ -2459,6 +2545,7 @@ export default [
     ]
   },
   {
+    "id": "Fr",
     "name": "Francium",
     "appearance": null,
     "atomic_mass": 223,
@@ -2490,6 +2577,7 @@ export default [
     ]
   },
   {
+    "id": "Ra",
     "name": "Radium",
     "appearance": "silvery white metallic",
     "atomic_mass": 226,
@@ -2521,6 +2609,7 @@ export default [
     ]
   },
   {
+    "id": "Ac",
     "name": "Actinium",
     "appearance": null,
     "atomic_mass": 227,
@@ -2552,6 +2641,7 @@ export default [
     ]
   },
   {
+    "id": "Th",
     "name": "Thorium",
     "appearance": "silvery, often with black tarnish",
     "atomic_mass": 232.03774,
@@ -2583,6 +2673,7 @@ export default [
     ]
   },
   {
+    "id": "Pa",
     "name": "Protactinium",
     "appearance": "bright, silvery metallic luster",
     "atomic_mass": 231.035882,
@@ -2614,6 +2705,7 @@ export default [
     ]
   },
   {
+    "id": "U",
     "name": "Uranium",
     "appearance": null,
     "atomic_mass": 238.028913,
@@ -2645,6 +2737,7 @@ export default [
     ]
   },
   {
+    "id": "Np",
     "name": "Neptunium",
     "appearance": "silvery metallic",
     "atomic_mass": 237,
@@ -2676,6 +2769,7 @@ export default [
     ]
   },
   {
+    "id": "Pu",
     "name": "Plutonium",
     "appearance": "silvery white, tarnishing to dark gray in air",
     "atomic_mass": 244,
@@ -2707,6 +2801,7 @@ export default [
     ]
   },
   {
+    "id": "Am",
     "name": "Americium",
     "appearance": "silvery white",
     "atomic_mass": 243,
@@ -2738,6 +2833,7 @@ export default [
     ]
   },
   {
+    "id": "Cm",
     "name": "Curium",
     "appearance": "silvery metallic, glows purple in the dark",
     "atomic_mass": 247,
@@ -2769,6 +2865,7 @@ export default [
     ]
   },
   {
+    "id": "Bk",
     "name": "Berkelium",
     "appearance": "silvery",
     "atomic_mass": 247,
@@ -2800,6 +2897,7 @@ export default [
     ]
   },
   {
+    "id": "Cf",
     "name": "Californium",
     "appearance": "silvery",
     "atomic_mass": 251,
@@ -2831,6 +2929,7 @@ export default [
     ]
   },
   {
+    "id": "Es",
     "name": "Einsteinium",
     "appearance": "silver-colored",
     "atomic_mass": 252,
@@ -2862,6 +2961,7 @@ export default [
     ]
   },
   {
+    "id": "Fm",
     "name": "Fermium",
     "appearance": null,
     "atomic_mass": 257,
@@ -2893,6 +2993,7 @@ export default [
     ]
   },
   {
+    "id": "Md",
     "name": "Mendelevium",
     "appearance": null,
     "atomic_mass": 258,
@@ -2924,6 +3025,7 @@ export default [
     ]
   },
   {
+    "id": "No",
     "name": "Nobelium",
     "appearance": null,
     "atomic_mass": 259,
@@ -2955,6 +3057,7 @@ export default [
     ]
   },
   {
+    "id": "Lr",
     "name": "Lawrencium",
     "appearance": null,
     "atomic_mass": 266,
@@ -2986,6 +3089,7 @@ export default [
     ]
   },
   {
+    "id": "Rf",
     "name": "Rutherfordium",
     "appearance": null,
     "atomic_mass": 267,
@@ -3017,6 +3121,7 @@ export default [
     ]
   },
   {
+    "id": "Db",
     "name": "Dubnium",
     "appearance": null,
     "atomic_mass": 268,
@@ -3048,6 +3153,7 @@ export default [
     ]
   },
   {
+    "id": "Sg",
     "name": "Seaborgium",
     "appearance": null,
     "atomic_mass": 269,
@@ -3079,6 +3185,7 @@ export default [
     ]
   },
   {
+    "id": "Bh",
     "name": "Bohrium",
     "appearance": null,
     "atomic_mass": 270,
@@ -3110,6 +3217,7 @@ export default [
     ]
   },
   {
+    "id": "Hs",
     "name": "Hassium",
     "appearance": null,
     "atomic_mass": 269,
@@ -3141,6 +3249,7 @@ export default [
     ]
   },
   {
+    "id": "Mt",
     "name": "Meitnerium",
     "appearance": null,
     "atomic_mass": 278,
@@ -3172,6 +3281,7 @@ export default [
     ]
   },
   {
+    "id": "Ds",
     "name": "Darmstadtium",
     "appearance": null,
     "atomic_mass": 281,
@@ -3203,6 +3313,7 @@ export default [
     ]
   },
   {
+    "id": "Rg",
     "name": "Roentgenium",
     "appearance": null,
     "atomic_mass": 282,
@@ -3234,6 +3345,7 @@ export default [
     ]
   },
   {
+    "id": "Cn",
     "name": "Copernicium",
     "appearance": null,
     "atomic_mass": 285,
@@ -3265,6 +3377,7 @@ export default [
     ]
   },
   {
+    "id": "Nh",
     "name": "Nihonium",
     "appearance": null,
     "atomic_mass": 286,
@@ -3296,6 +3409,7 @@ export default [
     ]
   },
   {
+    "id": "Fl",
     "name": "Flerovium",
     "appearance": null,
     "atomic_mass": 289,
@@ -3327,6 +3441,7 @@ export default [
     ]
   },
   {
+    "id": "Mc",
     "name": "Moscovium",
     "appearance": null,
     "atomic_mass": 289,
@@ -3358,6 +3473,7 @@ export default [
     ]
   },
   {
+    "id": "Lv",
     "name": "Livermorium",
     "appearance": null,
     "atomic_mass": 293,
@@ -3389,6 +3505,7 @@ export default [
     ]
   },
   {
+    "id": "Ts",
     "name": "Tennessine",
     "appearance": null,
     "atomic_mass": 294,
@@ -3420,6 +3537,7 @@ export default [
     ]
   },
   {
+    "id": "Og",
     "name": "Oganesson",
     "appearance": null,
     "atomic_mass": 294,

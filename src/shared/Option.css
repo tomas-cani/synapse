@@ -6,3 +6,16 @@
   box-sizing: border-box;
   cursor: pointer;
 }
+
+.Option:focus {
+  outline: none;
+  border: 1px solid #666;
+}
+
+.Option.correct {
+  background-color: #0c0;
+}
+
+.Option.incorrect {
+  background-color: #c00;
+}

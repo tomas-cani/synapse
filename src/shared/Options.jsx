@@ -2,35 +2,54 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Option from './Option';
-import { getRandomIntInclusive, shuffleArray } from './utils';
+import { fillWithRandomElements, shuffleArray } from './utils';
 
 import './Options.css';
 
 class Options extends Component {
-  getOptions(optionsStore) {
-    const selectedOptions = [this.props.currentElement];
-    while (selectedOptions.length < 4) {
-      const randomOption = optionsStore[getRandomIntInclusive(0, optionsStore.length)];
-      if (selectedOptions.find(selectedOption => selectedOption.symbol !== randomOption.symbol)) {
-        selectedOptions.push(randomOption);
-      }
-    }
-    shuffleArray(selectedOptions);
-    return selectedOptions.map(selectedOption =>
-      <Option key={selectedOption.symbol} name={selectedOption.name} />);
+  constructor(props) {
+    super(props);
+    this.state = {
+      options: this.getOptions(this.props.optionsSource),
+      selectedOptionId: null,
+    };
+    this.handleOptionSelect = this.handleOptionSelect.bind(this);
+  }
+
+  getOptions(optionsSource) {
+    const randomOptions = fillWithRandomElements([this.props.correctOption], optionsSource, 4);
+    shuffleArray(randomOptions);
+    return randomOptions;
+  }
+
+  handleOptionSelect(id) {
+    this.setState({
+      selectedOptionId: id,
+    });
   }
 
   render() {
-    const selectedOptions = this.getOptions(this.props.optionsStore);
+    const options = this.state.options.map(option => (
+      <Option
+        key={option.id}
+        id={option.id}
+        name={option.name}
+        onOptionSelect={this.handleOptionSelect}
+        selectedOptionId={this.state.selectedOptionId}
+        correctOptionId={this.props.correctOption.id}
+      />
+    ));
     return (
-      <div className="Options">{selectedOptions}</div>
+      <div className="Options">
+        {options}
+      </div>
     );
   }
 }
 
 Options.propTypes = {
-  optionsStore: PropTypes.arrayOf(PropTypes.object).isRequired,
-  currentElement: PropTypes.shape({ }).isRequired,
+  optionsSource: PropTypes.arrayOf(PropTypes.object).isRequired,
+  correctOption: PropTypes.shape({ id: PropTypes.string.isRequired }).isRequired,
 };
 
 export default Options;
