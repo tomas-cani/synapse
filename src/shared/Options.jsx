@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Option from './Option';
-import { getRandomIntInclusive } from './utils';
+import { getRandomIntInclusive, shuffleArray } from './utils';
 
 import './Options.css';
 
@@ -15,6 +15,7 @@ class Options extends Component {
         selectedOptions.push(randomOption);
       }
     }
+    shuffleArray(selectedOptions);
     return selectedOptions.map(selectedOption =>
       <Option key={selectedOption.symbol} name={selectedOption.name} />);
   }
