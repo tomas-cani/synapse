@@ -1,0 +1,11 @@
+.Element {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #ddd;
+}
+
+.Element-symbol {
+  margin: 0;
+  font-size: 6rem;
+}
