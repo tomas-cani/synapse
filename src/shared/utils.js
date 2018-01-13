@@ -3,11 +3,15 @@ export function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+export function getRandomElement(source) {
+  return source[getRandomIntInclusive(0, source.length)];
+}
+
 export function fillWithRandomElements(initialElements, source, size) {
   const randomArray = [].concat(initialElements);
   while (randomArray.length < size) {
     const randomOption = source[getRandomIntInclusive(0, source.length)];
-    if (randomArray.find(selectedOption => selectedOption.id !== randomOption.id)) {
+    if (!randomArray.find(option => option.id === randomOption.id)) {
       randomArray.push(randomOption);
     }
   }
