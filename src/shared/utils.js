@@ -1,16 +1,16 @@
-export function getRandomIntInclusive(min, max) {
-  // The maximum is inclusive and the minimum is inclusive
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+export function getRandomInt(min, max) {
+  // The maximum is exclusive and the minimum is inclusive
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 export function getRandomElement(source) {
-  return source[getRandomIntInclusive(0, source.length)];
+  return source[getRandomInt(0, source.length)];
 }
 
 export function fillWithRandomElements(initialElements, source, size) {
   const randomArray = [].concat(initialElements);
   while (randomArray.length < size) {
-    const randomOption = source[getRandomIntInclusive(0, source.length)];
+    const randomOption = getRandomElement(source);
     if (!randomArray.find(option => option.id === randomOption.id)) {
       randomArray.push(randomOption);
     }
