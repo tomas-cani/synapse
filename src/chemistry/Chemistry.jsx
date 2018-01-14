@@ -32,7 +32,13 @@ class Chemistry extends Component {
   getGameBoard() {
     return (
       <div className="game-board">
-        <Element name={this.state.correctOption.name} symbol={this.state.correctOption.symbol} />
+        <Element
+          name={this.state.correctOption.name}
+          mass={this.state.correctOption.atomic_mass}
+          symbol={this.state.correctOption.symbol}
+          number={this.state.correctOption.number}
+          selectedOptionId={this.state.selectedOptionId}
+        />
         <Options
           options={this.state.options}
           correctOption={this.state.correctOption}
