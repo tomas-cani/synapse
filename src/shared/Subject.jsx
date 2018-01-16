@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Chemistry from '../chemistry/Chemistry';
 import './Subject.css';
@@ -7,9 +6,9 @@ import './Subject.css';
 class Subject extends React.Component {
   render() {
     return (
-      <div className="Subject">
+      <main className="Subject">
         <Chemistry />
-      </div>
+      </main>
     );
   }
 }

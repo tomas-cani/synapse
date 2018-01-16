@@ -13,11 +13,11 @@ const iconsData = [
 
 const Sidebar = () => {
   const icons = iconsData.map(iconData =>
-    <Icon url={iconData.url} src={iconData.src} name={iconData.name} />);
+    <Icon key={iconData.name} url={iconData.url} src={iconData.src} name={iconData.name} />);
   return (
-    <div className="Sidebar">
+    <header className="Sidebar">
       {icons}
-    </div>
+    </header>
   );
 };
 
