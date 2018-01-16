@@ -4,6 +4,7 @@ import Element from './Element';
 import periodicTable from './periodicTable';
 
 import Options from '../shared/Options';
+import Score from '../shared/Score';
 import { getRandomElement, fillWithRandomElements, shuffleArray } from '../shared/utils';
 
 import './Chemistry.css';
@@ -18,8 +19,10 @@ class Chemistry extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      attempts: 0,
       correctOption: null,
       options: [],
+      correctAnswers: 0,
       selectedOptionId: null,
     };
     this.handleOptionSelect = this.handleOptionSelect.bind(this);
@@ -31,7 +34,7 @@ class Chemistry extends Component {
 
   getGameBoard() {
     return (
-      <div className="game-board">
+      <div className="Chemistry">
         <Element
           name={this.state.correctOption.name}
           mass={this.state.correctOption.atomic_mass}
@@ -45,14 +48,24 @@ class Chemistry extends Component {
           onOptionSelect={this.handleOptionSelect}
           selectedOptionId={this.state.selectedOptionId}
         />
+        <Score attempts={this.state.attempts} correctAnswers={this.state.correctAnswers} />
       </div>
     );
+  }
+
+  updateScore(id) {
+    this.setState({
+      attempts: this.state.attempts + 1,
+      correctAnswers: id === this.state.correctOption.id ? this.state.correctAnswers + 1 :
+        this.state.correctAnswers,
+    });
   }
 
   handleOptionSelect(id) {
     this.setState({
       selectedOptionId: id,
     });
+    this.updateScore(id);
     setTimeout(() => {
       this.nextQuestion();
     }, 1500);
