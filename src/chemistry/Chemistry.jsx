@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import Element from './Element';
 import periodicTable from './periodicTable';
 
-import EndScreen from '../shared/EndScreen';
-import Options from '../shared/Options';
-import Score from '../shared/Score';
+import EndScreen from '../workout/EndScreen';
+import Options from '../workout/Options';
+import Score from '../workout/Score';
 import { getRandomElement, fillWithRandomElements, shuffleArray } from '../shared/utils';
 
 import './Chemistry.css';
