@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import Button from './Button';
+
 import './Option.css';
 
 class Option extends Component {
@@ -9,21 +11,22 @@ class Option extends Component {
     this.handleSelection = this.handleSelection.bind(this);
   }
 
-  handleSelection(e) {
-    if (e.type === 'click' || e.key === 'Enter') {
-      this.props.onOptionSelect(this.props.id);
-    }
-  }
-
-  render() {
+  getClasses() {
     const showResult = this.props.selectedOptionId;
     const isSelectedOptionClass = this.props.selectedOptionId === this.props.id ? 'selected' : '';
     const isCorrectOptionClass = this.props.correctOptionId === this.props.id ? 'correct' : 'incorrect';
-    const classes = `Option ${showResult ? isSelectedOptionClass : ''} ${showResult ? isCorrectOptionClass : ''}`;
+    return `Option ${showResult ? isSelectedOptionClass : ''} ${showResult ? isCorrectOptionClass : ''}`;
+  }
+
+  handleSelection() {
+    this.props.onOptionSelect(this.props.id);
+  }
+
+  render() {
     return (
-      <button className={classes} onClick={this.handleSelection} onKeyUp={this.handleSelection}>
+      <Button classes={this.getClasses()} onSelect={this.handleSelection}>
         {this.props.name}
-      </button>
+      </Button>
     );
   }
 }
