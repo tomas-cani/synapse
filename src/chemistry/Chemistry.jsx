@@ -33,7 +33,7 @@ class Chemistry extends Component {
   }
 
   componentDidMount() {
-    this.nextQuestion();
+    this.startWorkout();
   }
 
   getGameBoard() {
@@ -67,6 +67,11 @@ class Chemistry extends Component {
     );
   }
 
+  startWorkout() {
+    this.setState(defaultState);
+    this.nextQuestion();
+  }
+
   updateScore(id) {
     this.setState({
       attempts: this.state.attempts + 1,
@@ -79,14 +84,14 @@ class Chemistry extends Component {
     this.setState({
       selectedOptionId: id,
     });
-    this.updateScore(id);
     setTimeout(() => {
+      this.updateScore(id);
       this.nextQuestion();
     }, 1500);
   }
 
   handleRetry() {
-    this.setState(defaultState);
+    this.startWorkout();
   }
 
   nextQuestion() {
