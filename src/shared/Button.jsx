@@ -6,12 +6,12 @@ import './Button.css';
 class Button extends Component {
   constructor(props) {
     super(props);
-    this.handleSelection = this.handleSelection.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleSelection(e) {
+  handleClick(e) {
     if (e.type === 'click' || e.key === 'Enter') {
-      this.props.onSelect();
+      this.props.onClick();
     }
   }
 
@@ -19,8 +19,8 @@ class Button extends Component {
     return (
       <button
         className={`Button ${this.props.classes}`}
-        onClick={this.handleSelection}
-        onKeyUp={this.handleSelection}
+        onClick={this.handleClick}
+        onKeyUp={this.handleClick}
       >
         {this.props.children}
       </button>
@@ -30,8 +30,12 @@ class Button extends Component {
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  classes: PropTypes.string.isRequired,
-  onSelect: PropTypes.func.isRequired,
+  classes: PropTypes.string,
+  onClick: PropTypes.func.isRequired,
+};
+
+Button.defaultProps = {
+  classes: '',
 };
 
 export default Button;

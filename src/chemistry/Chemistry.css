@@ -1,6 +1,10 @@
 .Chemistry {
   height: 100%;
   padding: 10px;
+}
+
+.game-board {
+  height: 100%;
   flex-direction: column;
   align-items: center;
 }

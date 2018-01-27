@@ -3,11 +3,20 @@ import React, { Component } from 'react';
 import Element from './Element';
 import periodicTable from './periodicTable';
 
+import EndScreen from '../shared/EndScreen';
 import Options from '../shared/Options';
 import Score from '../shared/Score';
 import { getRandomElement, fillWithRandomElements, shuffleArray } from '../shared/utils';
 
 import './Chemistry.css';
+
+const defaultState = {
+  attempts: 0,
+  correctOption: null,
+  options: [],
+  correctAnswers: 0,
+  selectedOptionId: null,
+};
 
 class Chemistry extends Component {
   static getOptions(initialOption, optionsSource) {
@@ -18,14 +27,9 @@ class Chemistry extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      attempts: 0,
-      correctOption: null,
-      options: [],
-      correctAnswers: 0,
-      selectedOptionId: null,
-    };
+    this.state = defaultState;
     this.handleOptionSelect = this.handleOptionSelect.bind(this);
+    this.handleRetry = this.handleRetry.bind(this);
   }
 
   componentDidMount() {
@@ -34,7 +38,7 @@ class Chemistry extends Component {
 
   getGameBoard() {
     return (
-      <div className="Chemistry">
+      <div className="game-board">
         <Element
           name={this.state.correctOption.name}
           mass={this.state.correctOption.atomic_mass}
@@ -50,6 +54,16 @@ class Chemistry extends Component {
         />
         <Score attempts={this.state.attempts} correctAnswers={this.state.correctAnswers} />
       </div>
+    );
+  }
+
+  getEndScreen() {
+    return (
+      <EndScreen
+        attempts={this.state.attempts}
+        correctAnswers={this.state.correctAnswers}
+        onRetry={this.handleRetry}
+      />
     );
   }
 
@@ -71,6 +85,10 @@ class Chemistry extends Component {
     }, 1500);
   }
 
+  handleRetry() {
+    this.setState(defaultState);
+  }
+
   nextQuestion() {
     const correctOption = getRandomElement(periodicTable);
     const options = Chemistry.getOptions([correctOption], periodicTable);
@@ -82,8 +100,18 @@ class Chemistry extends Component {
   }
 
   render() {
-    const gameBoard = this.state.correctOption ? this.getGameBoard() : '';
-    return gameBoard;
+    let content;
+    if (this.state.attempts < 5) {
+      content = this.state.correctOption ? this.getGameBoard() : '';
+    } else {
+      content = this.getEndScreen();
+    }
+
+    return (
+      <div className="Chemistry">
+        {content}
+      </div>
+    );
   }
 }
 
