@@ -4,6 +4,7 @@ import Element from './Element';
 import periodicTable from './periodicTable';
 
 import EndScreen from '../workout/EndScreen';
+import StartScreen from '../workout/StartScreen';
 import Options from '../workout/Options';
 import Score from '../workout/Score';
 import { getRandomElement, fillWithRandomElements, shuffleArray } from '../shared/utils';
@@ -12,9 +13,10 @@ import './Chemistry.css';
 
 const defaultState = {
   attempts: 0,
-  correctOption: null,
-  options: [],
   correctAnswers: 0,
+  correctOption: null,
+  workoutStarted: false,
+  options: [],
   selectedOptionId: null,
 };
 
@@ -30,10 +32,7 @@ class Chemistry extends Component {
     this.state = defaultState;
     this.handleOptionSelect = this.handleOptionSelect.bind(this);
     this.handleRetry = this.handleRetry.bind(this);
-  }
-
-  componentDidMount() {
-    this.startWorkout();
+    this.handleStart = this.handleStart.bind(this);
   }
 
   getGameBoard() {
@@ -67,8 +66,16 @@ class Chemistry extends Component {
     );
   }
 
+  getStartScreen() {
+    return (
+      <StartScreen onStart={this.handleStart} />
+    );
+  }
+
   startWorkout() {
-    this.setState(defaultState);
+    this.setState({
+      workoutStarted: true,
+    });
     this.nextQuestion();
   }
 
@@ -91,6 +98,10 @@ class Chemistry extends Component {
   }
 
   handleRetry() {
+    this.resetState();
+  }
+
+  handleStart() {
     this.startWorkout();
   }
 
@@ -104,9 +115,15 @@ class Chemistry extends Component {
     });
   }
 
+  resetState() {
+    this.setState(defaultState);
+  }
+
   render() {
     let content;
-    if (this.state.attempts < 5) {
+    if (!this.state.workoutStarted) {
+      content = this.getStartScreen();
+    } else if (this.state.attempts < 5) {
       content = this.state.correctOption ? this.getGameBoard() : '';
     } else {
       content = this.getEndScreen();

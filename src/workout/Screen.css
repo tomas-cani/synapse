@@ -1,10 +1,10 @@
-.EndScreen {
+.Screen {
   height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.EndScreen * {
+.Screen * {
   margin: 10px 0;
 }

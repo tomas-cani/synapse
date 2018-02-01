@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 
 import Button from '../shared/Button';
 import Score from './Score';
-
-import './EndScreen.css';
+import Screen from './Screen';
 
 class EndScreen extends React.Component {
   constructor(props) {
@@ -18,11 +17,11 @@ class EndScreen extends React.Component {
 
   render() {
     return (
-      <div className="EndScreen">
+      <Screen>
         <p>Workout has ended</p>
         <Score attempts={this.props.attempts} correctAnswers={this.props.correctAnswers} />
         <Button onClick={this.handleRetry}>Redo workout</Button>
-      </div>
+      </Screen>
     );
   }
 }
