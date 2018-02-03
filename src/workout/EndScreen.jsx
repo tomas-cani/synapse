@@ -20,7 +20,7 @@ class EndScreen extends React.Component {
       <Screen>
         <p>Workout has ended</p>
         <Score attempts={this.props.attempts} correctAnswers={this.props.correctAnswers} />
-        <Button onClick={this.handleRetry}>Redo workout</Button>
+        <Button onClick={this.handleRetry} value="Redo workout" />
       </Screen>
     );
   }

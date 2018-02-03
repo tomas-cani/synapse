@@ -1,37 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+
+import Input from './Input';
 
 import './Button.css';
 
-class Button extends Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(e) {
-    if (e.type === 'click' || e.key === 'Enter') {
-      this.props.onClick();
-    }
-  }
-
-  render() {
-    return (
-      <button
-        className={`Button ${this.props.classes}`}
-        onClick={this.handleClick}
-        onKeyUp={this.handleClick}
-      >
-        {this.props.children}
-      </button>
-    );
-  }
-}
+const Button = props => (
+  <Input
+    type="button"
+    className={`Button ${props.classes}`}
+    onClick={props.onClick}
+    onKeyUp={props.onClick}
+    value={props.value}
+  />
+);
 
 Button.propTypes = {
-  children: PropTypes.node.isRequired,
   classes: PropTypes.string,
   onClick: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired,
 };
 
 Button.defaultProps = {

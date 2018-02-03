@@ -24,9 +24,7 @@ class Option extends Component {
 
   render() {
     return (
-      <Button classes={this.getClasses()} onClick={this.handleSelection}>
-        {this.props.name}
-      </Button>
+      <Button classes={this.getClasses()} onClick={this.handleSelection} value={this.props.name} />
     );
   }
 }

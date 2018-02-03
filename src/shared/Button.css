@@ -1,20 +1,4 @@
 .Button {
   background-color: #ddd;
-  border-radius: 10px;
-  padding: 10px;
-  width: 140px;
-  box-sizing: border-box;
-  border: 3px solid transparent;
-  cursor: pointer;
-  font-family : inherit;
-  font-size: 1rem;
-}
-
-.Button:focus {
-  outline: none;
-  border-color: #cdcdcd;
-}
-
-.Button.selected {
-  border-color: #696969;
+  text-align: center;
 }
