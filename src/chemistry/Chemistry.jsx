@@ -13,6 +13,7 @@ import './Chemistry.css';
 
 const defaultState = {
   attempts: 0,
+  maxAttempts: '5',
   correctAnswers: 0,
   correctOption: null,
   workoutStarted: false,
@@ -30,6 +31,7 @@ class Chemistry extends Component {
   constructor(props) {
     super(props);
     this.state = defaultState;
+    this.handleConfig = this.handleConfig.bind(this);
     this.handleOptionSelect = this.handleOptionSelect.bind(this);
     this.handleRetry = this.handleRetry.bind(this);
     this.handleStart = this.handleStart.bind(this);
@@ -68,7 +70,11 @@ class Chemistry extends Component {
 
   getStartScreen() {
     return (
-      <StartScreen onStart={this.handleStart} />
+      <StartScreen
+        onStart={this.handleStart}
+        handleConfig={this.handleConfig}
+        maxAttempts={this.state.maxAttempts}
+      />
     );
   }
 
@@ -97,6 +103,12 @@ class Chemistry extends Component {
     }, 1500);
   }
 
+  handleConfig(maxAttempts) {
+    this.setState({
+      maxAttempts,
+    });
+  }
+
   handleRetry() {
     this.resetState();
   }
@@ -123,7 +135,7 @@ class Chemistry extends Component {
     let content;
     if (!this.state.workoutStarted) {
       content = this.getStartScreen();
-    } else if (this.state.attempts < 5) {
+    } else if (this.state.attempts < Number(this.state.maxAttempts)) {
       content = this.state.correctOption ? this.getGameBoard() : '';
     } else {
       content = this.getEndScreen();
