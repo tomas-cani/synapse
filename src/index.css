@@ -15,3 +15,7 @@ div, header {
   justify-content: space-around;
   align-items: center;
 }
+
+label .Input {
+  margin-left: 5px;
+}

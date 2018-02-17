@@ -19,7 +19,16 @@ class StartScreen extends React.Component {
     return (
       <Screen>
         <p>Configure workout</p>
-        <Input type="number" onInput={this.handleInput} value={this.props.maxAttempts} />
+        <label htmlFor="max-attempts">
+          # Attempts
+          <Input
+            id="max-attempts"
+            type="number"
+            onInput={this.handleInput}
+            value={this.props.maxAttempts}
+          />
+        </label>
+
         <Button onClick={this.props.onStart} value="Start workout" />
       </Screen>
     );

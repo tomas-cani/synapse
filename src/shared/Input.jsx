@@ -23,6 +23,7 @@ class Input extends Component {
   render() {
     return (
       <input
+        id={this.props.id}
         type={this.props.type}
         className={`Input ${this.props.className}`}
         onClick={this.handleClick}
@@ -36,6 +37,7 @@ class Input extends Component {
 
 Input.propTypes = {
   className: PropTypes.string,
+  id: PropTypes.string,
   onClick: PropTypes.func,
   onInput: PropTypes.func,
   type: PropTypes.string.isRequired,
@@ -44,6 +46,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   className: '',
+  id: null,
   onClick: () => {},
   onInput: () => {},
   value: '',
