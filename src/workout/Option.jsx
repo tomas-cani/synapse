@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '../shared/Button';
+import RaisedButton from 'material-ui/RaisedButton';
 
 import './Option.css';
 
@@ -24,7 +24,11 @@ class Option extends Component {
 
   render() {
     return (
-      <Button classes={this.getClasses()} onClick={this.handleSelection} value={this.props.name} />
+      <RaisedButton
+        className={this.getClasses()}
+        onClick={this.handleSelection}
+        label={this.props.name}
+      />
     );
   }
 }

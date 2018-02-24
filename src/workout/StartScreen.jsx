@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '../shared/Button';
+import RaisedButton from 'material-ui/RaisedButton';
 import Screen from './Screen';
 import Input from '../shared/Input';
 
@@ -28,8 +28,10 @@ class StartScreen extends React.Component {
             value={this.props.maxAttempts}
           />
         </label>
-
-        <Button onClick={this.props.onStart} value="Start workout" />
+        <RaisedButton
+          label="Start workout"
+          onClick={this.props.onStart}
+        />
       </Screen>
     );
   }

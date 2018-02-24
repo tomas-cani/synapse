@@ -1,15 +1,15 @@
-.Option.correct {
-  background-color: #b1dab1;
+.Option.correct button {
+  background-color: #b1dab1 !important;
 }
 
-.Option.correct.selected {
-  background-color: #5cd85c;
+.Option.correct.selected button {
+  background-color: #5cd85c !important;
 }
 
-.Option.incorrect {
-  background-color: #dab1b1;
+.Option.incorrect button {
+  background-color: #dab1b1 !important;
 }
 
-.Option.incorrect.selected {
-  background-color: #ce5555;
+.Option.incorrect.selected button {
+  background-color: #ce5555 !important;
 }

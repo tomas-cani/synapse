@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Sidebar from './sidebar/Sidebar';
 import Subject from './shared/Subject';
@@ -8,10 +9,12 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Sidebar />
-        <Subject />
-      </div>
+      <MuiThemeProvider>
+        <div className="App">
+          <Sidebar />
+          <Subject />
+        </div>
+      </MuiThemeProvider>
     );
   }
 }

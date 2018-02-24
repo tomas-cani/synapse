@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Button from '../shared/Button';
+import RaisedButton from 'material-ui/RaisedButton';
 import Score from './Score';
 import Screen from './Screen';
 
@@ -20,7 +20,7 @@ class EndScreen extends React.Component {
       <Screen>
         <p>Workout has ended</p>
         <Score attempts={this.props.attempts} correctAnswers={this.props.correctAnswers} />
-        <Button onClick={this.handleRetry} value="Redo workout" />
+        <RaisedButton onClick={this.handleRetry} label="Redo workout" />
       </Screen>
     );
   }
