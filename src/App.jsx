@@ -5,6 +5,7 @@ import Sidebar from './sidebar/Sidebar';
 import Subject from './shared/Subject';
 
 import './App.css';
+import './material-ui.css';
 
 class App extends Component {
   render() {

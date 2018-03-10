@@ -13,6 +13,7 @@ import './Chemistry.css';
 
 const defaultState = {
   attempts: 0,
+  difficulty: 1,
   maxAttempts: '5',
   correctAnswers: 0,
   correctOption: null,
@@ -32,6 +33,7 @@ class Chemistry extends Component {
     super(props);
     this.state = defaultState;
     this.handleConfig = this.handleConfig.bind(this);
+    this.handleDifficultyChange = this.handleDifficultyChange.bind(this);
     this.handleOptionSelect = this.handleOptionSelect.bind(this);
     this.handleRetry = this.handleRetry.bind(this);
     this.handleStart = this.handleStart.bind(this);
@@ -71,8 +73,10 @@ class Chemistry extends Component {
   getStartScreen() {
     return (
       <StartScreen
+        difficulty={this.state.difficulty}
         onStart={this.handleStart}
         handleConfig={this.handleConfig}
+        handleDifficultyChange={this.handleDifficultyChange}
         maxAttempts={this.state.maxAttempts}
       />
     );
@@ -106,6 +110,12 @@ class Chemistry extends Component {
   handleConfig(maxAttempts) {
     this.setState({
       maxAttempts,
+    });
+  }
+
+  handleDifficultyChange(difficulty) {
+    this.setState({
+      difficulty,
     });
   }
 

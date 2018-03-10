@@ -1,18 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
+import Slider from 'material-ui/Slider';
+import TextField from 'material-ui/TextField';
+
 import Screen from './Screen';
 
 class StartScreen extends React.Component {
   constructor(props) {
     super(props);
     this.handleInput = this.handleInput.bind(this);
+    this.handleDifficultyChange = this.handleDifficultyChange.bind(this);
   }
 
   handleInput(e) {
     this.props.handleConfig(e.target.value);
+  }
+
+  handleDifficultyChange(e, value) {
+    this.props.handleDifficultyChange(value);
   }
 
   render() {
@@ -26,17 +33,25 @@ class StartScreen extends React.Component {
           onChange={this.handleInput}
           value={this.props.maxAttempts}
         />
-        <RaisedButton
-          label="Start workout"
-          onClick={this.props.onStart}
+        <Slider
+          className="slider"
+          min={1}
+          max={5}
+          step={1}
+          value={this.props.difficulty}
+          onChange={this.handleDifficultyChange}
         />
+        <p>Difficulty Level: {this.props.difficulty}</p>
+        <RaisedButton label="Start workout" onClick={this.props.onStart} />
       </Screen>
     );
   }
 }
 
 StartScreen.propTypes = {
+  difficulty: PropTypes.number.isRequired,
   handleConfig: PropTypes.func.isRequired,
+  handleDifficultyChange: PropTypes.func.isRequired,
   maxAttempts: PropTypes.string.isRequired,
   onStart: PropTypes.func.isRequired,
 };
