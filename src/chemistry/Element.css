@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-p {
+.Element p {
   margin: 0;
   font-size: 1.5rem;
 }

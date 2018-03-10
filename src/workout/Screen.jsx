@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './Screen.css';
 
 const Screen = props => (
-  <div className="Screen">
+  <div className="Screen container">
     {props.children}
   </div>
 );

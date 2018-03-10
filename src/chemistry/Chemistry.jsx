@@ -39,7 +39,7 @@ class Chemistry extends Component {
 
   getGameBoard() {
     return (
-      <div className="game-board">
+      <div className="game-board container">
         <Element
           name={this.state.correctOption.name}
           mass={this.state.correctOption.atomic_mass}
@@ -142,7 +142,7 @@ class Chemistry extends Component {
     }
 
     return (
-      <div className="Chemistry">
+      <div className="Chemistry container">
         {content}
       </div>
     );

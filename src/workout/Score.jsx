@@ -9,7 +9,7 @@ class Score extends React.Component {
 
   render() {
     return (
-      <div className="Score">
+      <div className="Score container">
         <p>{this.props.correctAnswers} / {this.props.attempts} ({this.percentage()}%)</p>
       </div>
     );

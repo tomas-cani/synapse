@@ -9,7 +9,7 @@ body {
   background-color: #f4f4f4;
 }
 
-div, header {
+.container, header {
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
