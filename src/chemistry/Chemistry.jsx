@@ -22,6 +22,29 @@ const defaultState = {
   selectedOptionId: null,
 };
 
+const difficultyLevels = [
+  {
+    description: 'First 2 periods of the periodic table. 10 elements',
+    max: 10,
+  },
+  {
+    description: 'First 3 periods of the periodic table. 18 elements',
+    max: 18,
+  },
+  {
+    description: 'First 4 periods of the periodic table. 36 elements',
+    max: 36,
+  },
+  {
+    description: 'First 6 periods of the periodic table. 86 elements',
+    max: 86,
+  },
+  {
+    description: 'All periods of the periodic table. 118 elements',
+    max: 118,
+  },
+];
+
 class Chemistry extends Component {
   static getOptions(initialOption, optionsSource) {
     const randomOptions = fillWithRandomElements(initialOption, optionsSource, 4);
@@ -74,6 +97,7 @@ class Chemistry extends Component {
     return (
       <StartScreen
         difficulty={this.state.difficulty}
+        difficultyDescription={difficultyLevels[this.state.difficulty - 1].description}
         onStart={this.handleStart}
         handleConfig={this.handleConfig}
         handleDifficultyChange={this.handleDifficultyChange}
@@ -128,7 +152,8 @@ class Chemistry extends Component {
   }
 
   nextQuestion() {
-    const correctOption = getRandomElement(periodicTable);
+    const correctOption =
+      getRandomElement(periodicTable, difficultyLevels[this.state.difficulty - 1].max);
     const options = Chemistry.getOptions([correctOption], periodicTable);
     this.setState({
       correctOption,

@@ -3,8 +3,8 @@ export function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-export function getRandomElement(source) {
-  return source[getRandomInt(0, source.length)];
+export function getRandomElement(source, max) {
+  return source[getRandomInt(0, max || source.length)];
 }
 
 export function fillWithRandomElements(initialElements, source, size) {

@@ -42,6 +42,7 @@ class StartScreen extends React.Component {
           onChange={this.handleDifficultyChange}
         />
         <p>Difficulty Level: {this.props.difficulty}</p>
+        <p>{this.props.difficultyDescription}</p>
         <RaisedButton label="Start workout" onClick={this.props.onStart} />
       </Screen>
     );
@@ -50,6 +51,7 @@ class StartScreen extends React.Component {
 
 StartScreen.propTypes = {
   difficulty: PropTypes.number.isRequired,
+  difficultyDescription: PropTypes.string.isRequired,
   handleConfig: PropTypes.func.isRequired,
   handleDifficultyChange: PropTypes.func.isRequired,
   maxAttempts: PropTypes.string.isRequired,
