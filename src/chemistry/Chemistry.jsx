@@ -5,7 +5,7 @@ import periodicTable from './periodicTable';
 
 import EndScreen from '../workout/EndScreen';
 import StartScreen from '../workout/StartScreen';
-import Options from '../workout/Options';
+import Exercise from '../workout/Exercise';
 import Score from '../workout/Score';
 import { getRandomElement, fillWithRandomElements, shuffleArray } from '../shared/utils';
 
@@ -64,20 +64,21 @@ class Chemistry extends Component {
 
   getGameBoard() {
     return (
-      <div className="game-board container">
-        <Element
-          name={this.state.correctOption.name}
-          mass={this.state.correctOption.atomic_mass}
-          symbol={this.state.correctOption.symbol}
-          number={this.state.correctOption.number}
-          selectedOptionId={this.state.selectedOptionId}
-        />
-        <Options
+      <div className="game-board container vertical">
+        <Exercise
           options={this.state.options}
           correctOption={this.state.correctOption}
           onOptionSelect={this.handleOptionSelect}
           selectedOptionId={this.state.selectedOptionId}
-        />
+        >
+          <Element
+            name={this.state.correctOption.name}
+            mass={this.state.correctOption.atomic_mass}
+            symbol={this.state.correctOption.symbol}
+            number={this.state.correctOption.number}
+            selectedOptionId={this.state.selectedOptionId}
+          />
+        </Exercise>
         <Score attempts={this.state.attempts} correctAnswers={this.state.correctAnswers} />
       </div>
     );

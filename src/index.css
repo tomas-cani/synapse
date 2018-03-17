@@ -16,6 +16,10 @@ body {
   align-items: center;
 }
 
+.container.vertical {
+  flex-direction: column;
+}
+
 label .Input {
   margin-left: 5px;
 }
