@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
 
-import Element from './Element';
 import periodicTable from './periodicTable';
 
 import EndScreen from '../workout/EndScreen';
 import StartScreen from '../workout/StartScreen';
-import Exercise from '../workout/Exercise';
-import Score from '../workout/Score';
-import { getRandomElement, fillWithRandomElements, shuffleArray } from '../shared/utils';
+import Workout from '../workout/Workout';
 
 import './Chemistry.css';
 
 const defaultState = {
-  attempts: 0,
   difficulty: 1,
   maxAttempts: '5',
   correctAnswers: 0,
-  correctOption: null,
   workoutStarted: false,
-  options: [],
-  selectedOptionId: null,
+  workoutEnded: false,
 };
 
 const difficultyLevels = [
@@ -46,48 +40,20 @@ const difficultyLevels = [
 ];
 
 class Chemistry extends Component {
-  static getOptions(initialOption, optionsSource) {
-    const randomOptions = fillWithRandomElements(initialOption, optionsSource, 4);
-    shuffleArray(randomOptions);
-    return randomOptions;
-  }
-
   constructor(props) {
     super(props);
     this.state = defaultState;
     this.handleConfig = this.handleConfig.bind(this);
     this.handleDifficultyChange = this.handleDifficultyChange.bind(this);
-    this.handleOptionSelect = this.handleOptionSelect.bind(this);
     this.handleRetry = this.handleRetry.bind(this);
     this.handleStart = this.handleStart.bind(this);
-  }
-
-  getGameBoard() {
-    return (
-      <div className="game-board container vertical">
-        <Exercise
-          options={this.state.options}
-          correctOption={this.state.correctOption}
-          onOptionSelect={this.handleOptionSelect}
-          selectedOptionId={this.state.selectedOptionId}
-        >
-          <Element
-            name={this.state.correctOption.name}
-            mass={this.state.correctOption.atomic_mass}
-            symbol={this.state.correctOption.symbol}
-            number={this.state.correctOption.number}
-            selectedOptionId={this.state.selectedOptionId}
-          />
-        </Exercise>
-        <Score attempts={this.state.attempts} correctAnswers={this.state.correctAnswers} />
-      </div>
-    );
+    this.handleWorkoutEnd = this.handleWorkoutEnd.bind(this);
   }
 
   getEndScreen() {
     return (
       <EndScreen
-        attempts={this.state.attempts}
+        attempts={this.state.maxAttempts}
         correctAnswers={this.state.correctAnswers}
         onRetry={this.handleRetry}
       />
@@ -107,29 +73,15 @@ class Chemistry extends Component {
     );
   }
 
-  startWorkout() {
-    this.setState({
-      workoutStarted: true,
-    });
-    this.nextQuestion();
-  }
-
-  updateScore(id) {
-    this.setState({
-      attempts: this.state.attempts + 1,
-      correctAnswers: id === this.state.correctOption.id ? this.state.correctAnswers + 1 :
-        this.state.correctAnswers,
-    });
-  }
-
-  handleOptionSelect(id) {
-    this.setState({
-      selectedOptionId: id,
-    });
-    setTimeout(() => {
-      this.updateScore(id);
-      this.nextQuestion();
-    }, 1500);
+  getWorkout() {
+    return (
+      <Workout
+        maxAttempts={this.state.maxAttempts}
+        maxRandomElement={difficultyLevels[this.state.difficulty - 1].max}
+        onWorkoutEnd={this.handleWorkoutEnd}
+        periodicTable={periodicTable}
+      />
+    );
   }
 
   handleConfig(maxAttempts) {
@@ -149,17 +101,15 @@ class Chemistry extends Component {
   }
 
   handleStart() {
-    this.startWorkout();
+    this.setState({
+      workoutStarted: true,
+    });
   }
 
-  nextQuestion() {
-    const correctOption =
-      getRandomElement(periodicTable, difficultyLevels[this.state.difficulty - 1].max);
-    const options = Chemistry.getOptions([correctOption], periodicTable);
+  handleWorkoutEnd(correctAnswers) {
     this.setState({
-      correctOption,
-      options,
-      selectedOptionId: null,
+      correctAnswers,
+      workoutEnded: true,
     });
   }
 
@@ -171,8 +121,8 @@ class Chemistry extends Component {
     let content;
     if (!this.state.workoutStarted) {
       content = this.getStartScreen();
-    } else if (this.state.attempts < Number(this.state.maxAttempts)) {
-      content = this.state.correctOption ? this.getGameBoard() : '';
+    } else if (!this.state.workoutEnded) {
+      content = this.getWorkout();
     } else {
       content = this.getEndScreen();
     }
