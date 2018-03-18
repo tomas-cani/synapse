@@ -8,7 +8,7 @@ import './Element.css';
 class Element extends Component {
   render() {
     return (
-      <Paper className="Element container" zDepth="3">
+      <Paper className="Element container" zDepth={3}>
         <p className="Element-number">{this.props.number}</p>
         <h1 className="Element-symbol">{this.props.symbol}</h1>
         <p className="Element-name">{this.props.selectedOptionId ? this.props.name : '?'}</p>
