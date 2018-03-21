@@ -77,9 +77,9 @@ class Chemistry extends Component {
     return (
       <Workout
         maxAttempts={this.state.maxAttempts}
-        maxRandomElement={difficultyLevels[this.state.difficulty - 1].max}
+        maxDataIndex={difficultyLevels[this.state.difficulty - 1].max}
         onWorkoutEnd={this.handleWorkoutEnd}
-        periodicTable={periodicTable}
+        subjectData={periodicTable}
       />
     );
   }

@@ -46,8 +46,8 @@ class Workout extends React.Component {
     }
 
     const correctOption =
-      getRandomElement(this.props.periodicTable, this.props.maxRandomElement);
-    const options = Workout.getOptions([correctOption], this.props.periodicTable);
+      getRandomElement(this.props.subjectData, this.props.maxDataIndex);
+    const options = Workout.getOptions([correctOption], this.props.subjectData);
     this.setState({
       correctOption,
       options,
@@ -88,9 +88,9 @@ class Workout extends React.Component {
 
 Workout.propTypes = {
   maxAttempts: PropTypes.string.isRequired,
-  maxRandomElement: PropTypes.number.isRequired,
+  maxDataIndex: PropTypes.number.isRequired,
   onWorkoutEnd: PropTypes.func.isRequired,
-  periodicTable: PropTypes.array.isRequired,
+  subjectData: PropTypes.arrayOf(PropTypes.any.isRequired).isRequired,
 };
 
 export default Workout;
