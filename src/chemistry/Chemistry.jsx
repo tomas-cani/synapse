@@ -5,6 +5,7 @@ import periodicTable from './periodicTable';
 import EndScreen from '../workout/EndScreen';
 import StartScreen from '../workout/StartScreen';
 import Workout from '../workout/Workout';
+import SubjectData from '../workout/subjectData';
 
 import './Chemistry.css';
 
@@ -43,6 +44,7 @@ class Chemistry extends Component {
   constructor(props) {
     super(props);
     this.state = defaultState;
+    this.subjectData = new SubjectData(periodicTable);
     this.handleConfig = this.handleConfig.bind(this);
     this.handleDifficultyChange = this.handleDifficultyChange.bind(this);
     this.handleRetry = this.handleRetry.bind(this);
@@ -79,7 +81,7 @@ class Chemistry extends Component {
         maxAttempts={this.state.maxAttempts}
         maxDataIndex={difficultyLevels[this.state.difficulty - 1].max}
         onWorkoutEnd={this.handleWorkoutEnd}
-        subjectData={periodicTable}
+        subjectData={this.subjectData}
       />
     );
   }

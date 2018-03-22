@@ -5,15 +5,7 @@ import Element from '../chemistry/Element';
 import Exercise from '../workout/Exercise';
 import Score from '../workout/Score';
 
-import { getRandomElement, fillWithRandomElements, shuffleArray } from '../shared/utils';
-
 class Workout extends React.Component {
-  static getOptions(initialOption, optionsSource) {
-    const randomOptions = fillWithRandomElements(initialOption, optionsSource, 4);
-    shuffleArray(randomOptions);
-    return randomOptions;
-  }
-
   constructor() {
     super();
     this.state = {
@@ -45,12 +37,10 @@ class Workout extends React.Component {
       this.props.onWorkoutEnd(this.state.correctAnswers);
     }
 
-    const correctOption =
-      getRandomElement(this.props.subjectData, this.props.maxDataIndex);
-    const options = Workout.getOptions([correctOption], this.props.subjectData);
+    const randomQuestion = this.props.subjectData.getRandomQuestion(this.props.maxDataIndex);
     this.setState({
-      correctOption,
-      options,
+      correctOption: randomQuestion.correctOption,
+      options: randomQuestion.options,
       selectedOptionId: null,
     });
   }
