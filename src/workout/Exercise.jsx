@@ -12,6 +12,7 @@ const Exercise = props => (
       options={props.options}
       correctOption={props.correctOption}
       onOptionSelect={props.onOptionSelect}
+      property={props.property}
       selectedOptionId={props.selectedOptionId}
     />
   </div>
@@ -22,6 +23,7 @@ Exercise.propTypes = {
   options: PropTypes.arrayOf(PropTypes.object).isRequired,
   correctOption: PropTypes.shape({ id: PropTypes.string.isRequired }).isRequired,
   onOptionSelect: PropTypes.func.isRequired,
+  property: PropTypes.string.isRequired,
   selectedOptionId: PropTypes.string,
 };
 

@@ -1,8 +1,9 @@
 import { getRandomElement, fillWithRandomElements, shuffleArray } from '../shared/utils';
 
 export default class SubjectData {
-  constructor(dataStore = []) {
+  constructor(dataStore = [], properties = []) {
     this.dataStore = dataStore;
+    this.properties = properties;
   }
 
   getOptions(initialOption) {
@@ -14,6 +15,7 @@ export default class SubjectData {
   getRandomQuestion(max) {
     const correctOption = getRandomElement(this.dataStore, max);
     const options = this.getOptions([correctOption]);
-    return { correctOption, options };
+    const property = getRandomElement(this.properties);
+    return { correctOption, options, property };
   }
 }

@@ -44,7 +44,7 @@ class Chemistry extends Component {
   constructor(props) {
     super(props);
     this.state = defaultState;
-    this.subjectData = new SubjectData(periodicTable);
+    this.subjectData = new SubjectData(periodicTable, ['id', 'name', 'number']);
     this.handleConfig = this.handleConfig.bind(this);
     this.handleDifficultyChange = this.handleDifficultyChange.bind(this);
     this.handleRetry = this.handleRetry.bind(this);

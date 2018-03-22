@@ -22,7 +22,7 @@ class Options extends Component {
       <Option
         key={option.id}
         id={option.id}
-        name={option.name}
+        name={option[this.props.property]}
         onOptionSelect={this.handleOptionSelect}
         selectedOptionId={this.props.selectedOptionId}
         correctOptionId={this.props.correctOption.id}
@@ -40,6 +40,7 @@ Options.propTypes = {
   options: PropTypes.arrayOf(PropTypes.object).isRequired,
   correctOption: PropTypes.shape({ id: PropTypes.string.isRequired }).isRequired,
   onOptionSelect: PropTypes.func.isRequired,
+  property: PropTypes.string.isRequired,
   selectedOptionId: PropTypes.string,
 };
 

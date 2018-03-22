@@ -41,6 +41,7 @@ class Workout extends React.Component {
     this.setState({
       correctOption: randomQuestion.correctOption,
       options: randomQuestion.options,
+      property: randomQuestion.property,
       selectedOptionId: null,
     });
   }
@@ -60,6 +61,7 @@ class Workout extends React.Component {
           options={this.state.options}
           correctOption={this.state.correctOption}
           onOptionSelect={this.handleOptionSelect}
+          property={this.state.property}
           selectedOptionId={this.state.selectedOptionId}
         >
           <Element
@@ -67,6 +69,7 @@ class Workout extends React.Component {
             mass={this.state.correctOption.atomic_mass}
             symbol={this.state.correctOption.symbol}
             number={this.state.correctOption.number}
+            property={this.state.property}
             selectedOptionId={this.state.selectedOptionId}
           />
         </Exercise>
