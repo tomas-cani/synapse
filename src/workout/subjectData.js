@@ -6,15 +6,15 @@ export default class SubjectData {
     this.properties = properties;
   }
 
-  getOptions(initialOption) {
-    const randomOptions = fillWithRandomElements(initialOption, this.dataStore, 4);
+  getOptions(initialOption, max) {
+    const randomOptions = fillWithRandomElements(initialOption, this.dataStore, 4, max);
     shuffleArray(randomOptions);
     return randomOptions;
   }
 
   getRandomQuestion(max) {
     const correctOption = getRandomElement(this.dataStore, max);
-    const options = this.getOptions([correctOption]);
+    const options = this.getOptions([correctOption], max);
     const property = getRandomElement(this.properties);
     return { correctOption, options, property };
   }

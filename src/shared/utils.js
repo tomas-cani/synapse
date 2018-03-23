@@ -7,10 +7,10 @@ export function getRandomElement(source, max) {
   return source[getRandomInt(0, max || source.length)];
 }
 
-export function fillWithRandomElements(initialElements, source, size) {
+export function fillWithRandomElements(initialElements, source, size, max) {
   const randomArray = [].concat(initialElements);
   while (randomArray.length < size) {
-    const randomOption = getRandomElement(source);
+    const randomOption = getRandomElement(source, max);
     if (!randomArray.find(option => option.id === randomOption.id)) {
       randomArray.push(randomOption);
     }
