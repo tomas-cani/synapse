@@ -11,7 +11,7 @@ import './Chemistry.css';
 
 const defaultState = {
   difficulty: 1,
-  maxAttempts: '5',
+  maxExercises: '5',
   correctAnswers: 0,
   workoutStarted: false,
   workoutEnded: false,
@@ -55,7 +55,7 @@ class Chemistry extends Component {
   getEndScreen() {
     return (
       <EndScreen
-        attempts={this.state.maxAttempts}
+        attempts={this.state.maxExercises}
         correctAnswers={this.state.correctAnswers}
         onRetry={this.handleRetry}
       />
@@ -70,7 +70,7 @@ class Chemistry extends Component {
         onStart={this.handleStart}
         handleConfig={this.handleConfig}
         handleDifficultyChange={this.handleDifficultyChange}
-        maxAttempts={this.state.maxAttempts}
+        maxExercises={this.state.maxExercises}
       />
     );
   }
@@ -78,7 +78,7 @@ class Chemistry extends Component {
   getWorkout() {
     return (
       <Workout
-        maxAttempts={this.state.maxAttempts}
+        maxExercises={this.state.maxExercises}
         maxDataIndex={difficultyLevels[this.state.difficulty - 1].max}
         onWorkoutEnd={this.handleWorkoutEnd}
         subjectData={this.subjectData}
@@ -86,9 +86,9 @@ class Chemistry extends Component {
     );
   }
 
-  handleConfig(maxAttempts) {
+  handleConfig(maxExercises) {
     this.setState({
-      maxAttempts,
+      maxExercises,
     });
   }
 

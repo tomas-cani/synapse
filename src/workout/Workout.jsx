@@ -33,7 +33,7 @@ class Workout extends React.Component {
   }
 
   nextQuestion() {
-    if (this.state.attempts >= Number(this.props.maxAttempts)) {
+    if (this.state.attempts >= Number(this.props.maxExercises)) {
       this.props.onWorkoutEnd(this.state.correctAnswers);
     }
 
@@ -80,7 +80,7 @@ class Workout extends React.Component {
 }
 
 Workout.propTypes = {
-  maxAttempts: PropTypes.string.isRequired,
+  maxExercises: PropTypes.string.isRequired,
   maxDataIndex: PropTypes.number.isRequired,
   onWorkoutEnd: PropTypes.func.isRequired,
   subjectData: PropTypes.arrayOf(PropTypes.any.isRequired).isRequired,

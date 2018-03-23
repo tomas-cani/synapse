@@ -27,11 +27,10 @@ class StartScreen extends React.Component {
       <Screen>
         <p>Configure workout</p>
         <TextField
-          id="max-attempts"
-          floatingLabelText="# Attempts"
+          floatingLabelText="# Exercises"
           type="number"
           onChange={this.handleInput}
-          value={this.props.maxAttempts}
+          value={this.props.maxExercises}
         />
         <Slider
           className="slider"
@@ -54,7 +53,7 @@ StartScreen.propTypes = {
   difficultyDescription: PropTypes.string.isRequired,
   handleConfig: PropTypes.func.isRequired,
   handleDifficultyChange: PropTypes.func.isRequired,
-  maxAttempts: PropTypes.string.isRequired,
+  maxExercises: PropTypes.string.isRequired,
   onStart: PropTypes.func.isRequired,
 };
 
