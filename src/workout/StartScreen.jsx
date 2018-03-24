@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import RaisedButton from 'material-ui/RaisedButton';
 import Slider from 'material-ui/Slider';
-import TextField from 'material-ui/TextField';
+import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
 
 import Screen from './Screen';
 
@@ -25,13 +25,21 @@ class StartScreen extends React.Component {
   render() {
     return (
       <Screen>
-        <p>Configure workout</p>
-        <TextField
-          floatingLabelText="# Exercises"
-          type="number"
+        <h1>Configure workout</h1>
+        <h2># Exercises</h2>
+
+        <RadioButtonGroup
+          className=""
+          name="maxExercises"
+          defaultSelected="not_light"
           onChange={this.handleInput}
-          value={this.props.maxExercises}
-        />
+          valueSelected={this.props.maxExercises}
+        >
+          <RadioButton value="5" label="5" className="radio" />
+          <RadioButton value="10" label="10" className="radio" />
+          <RadioButton value="20" label="20" className="radio" />
+        </RadioButtonGroup>
+        <h2>Difficulty Level: {this.props.difficulty}</h2>
         <Slider
           className="slider"
           min={1}
@@ -40,7 +48,6 @@ class StartScreen extends React.Component {
           value={this.props.difficulty}
           onChange={this.handleDifficultyChange}
         />
-        <p>Difficulty Level: {this.props.difficulty}</p>
         <p>{this.props.difficultyDescription}</p>
         <RaisedButton label="Start workout" onClick={this.props.onStart} />
       </Screen>
