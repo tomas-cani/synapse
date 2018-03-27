@@ -8,9 +8,9 @@ import './Element.css';
 class Element extends Component {
   resolveHidden(property, propertyName) {
     if (this.props.property === propertyName) {
-      return this.props.selectedOptionId ? this.props[property] : '?';
+      return this.props.selectedOptionId ? this.props.data[property] : '?';
     }
-    return this.props[property];
+    return this.props.data[property];
   }
 
   render() {
@@ -19,17 +19,14 @@ class Element extends Component {
         <p className="Element-number">{this.resolveHidden('number', 'number')}</p>
         <h1 className="Element-symbol">{this.resolveHidden('symbol', 'id')}</h1>
         <p className="Element-name">{this.resolveHidden('name', 'name')}</p>
-        <p className="Element-mass">{this.props.mass}</p>
+        <p className="Element-mass">{this.props.data.mass}</p>
       </Paper>
     );
   }
 }
 
 Element.propTypes = {
-  number: PropTypes.number.isRequired,
-  symbol: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  mass: PropTypes.number.isRequired,
+  data: PropTypes.object.isRequired,
   property: PropTypes.string.isRequired,
   selectedOptionId: PropTypes.string,
 };

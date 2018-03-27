@@ -65,10 +65,12 @@ class Workout extends React.Component {
           selectedOptionId={this.state.selectedOptionId}
         >
           <Element
-            name={this.state.correctOption.name}
-            mass={this.state.correctOption.atomic_mass}
-            symbol={this.state.correctOption.symbol}
-            number={this.state.correctOption.number}
+            data={{
+              name: this.state.correctOption.name,
+              mass: this.state.correctOption.atomic_mass,
+              symbol: this.state.correctOption.symbol,
+              number: this.state.correctOption.number,
+            }}
             property={this.state.property}
             selectedOptionId={this.state.selectedOptionId}
           />
