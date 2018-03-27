@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Sidebar from './sidebar/Sidebar';
-import Subject from './shared/Subject';
+import Subject from './subject/Subject';
 
 import './App.css';
 import './material-ui.css';
