@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Element from '../chemistry/Element';
 import Exercise from '../workout/Exercise';
 import Score from '../workout/Score';
 
@@ -55,6 +54,7 @@ class Workout extends React.Component {
   }
 
   render() {
+    const Question = this.props.questionComponent;
     return this.state.correctOption ? (
       <div className="game-board container vertical">
         <Exercise
@@ -64,13 +64,8 @@ class Workout extends React.Component {
           property={this.state.property}
           selectedOptionId={this.state.selectedOptionId}
         >
-          <Element
-            data={{
-              name: this.state.correctOption.name,
-              mass: this.state.correctOption.atomic_mass,
-              symbol: this.state.correctOption.symbol,
-              number: this.state.correctOption.number,
-            }}
+          <Question
+            data={this.state.correctOption}
             property={this.state.property}
             selectedOptionId={this.state.selectedOptionId}
           />
@@ -85,6 +80,7 @@ Workout.propTypes = {
   maxExercises: PropTypes.string.isRequired,
   maxDataIndex: PropTypes.number.isRequired,
   onWorkoutEnd: PropTypes.func.isRequired,
+  questionComponent: PropTypes.element.isRequired,
   subjectData: PropTypes.arrayOf(PropTypes.any.isRequired).isRequired,
 };
 

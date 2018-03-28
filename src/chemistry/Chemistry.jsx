@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import periodicTable from './periodicTable';
 
+import Element from './Element';
 import EndScreen from '../workout/EndScreen';
 import StartScreen from '../workout/StartScreen';
 import Workout from '../workout/Workout';
@@ -81,6 +82,7 @@ class Chemistry extends Component {
         maxExercises={this.state.maxExercises}
         maxDataIndex={difficultyLevels[this.state.difficulty - 1].max}
         onWorkoutEnd={this.handleWorkoutEnd}
+        questionComponent={Element}
         subjectData={this.subjectData}
       />
     );
