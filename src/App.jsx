@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Redirect } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Sidebar from './sidebar/Sidebar';
@@ -10,12 +11,15 @@ import './material-ui.css';
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider>
-        <div className="App container">
-          <Sidebar />
-          <Subject />
-        </div>
-      </MuiThemeProvider>
+      <BrowserRouter>
+        <MuiThemeProvider>
+          <div className="App container">
+            <Sidebar />
+            <Subject />
+          </div>
+          <Redirect to="/chemistry" />
+        </MuiThemeProvider>
+      </BrowserRouter>
     );
   }
 }
