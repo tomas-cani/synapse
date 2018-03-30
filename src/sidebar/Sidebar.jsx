@@ -6,9 +6,9 @@ import Icon from './Icon';
 import './Sidebar.css';
 
 const iconsData = [
-  { url: '/', src: astronomy, name: 'Astronomy' },
-  { url: '/', src: chemistry, name: 'Chemistry' },
-  { url: '/', src: geography, name: 'Geography' },
+  { url: '/astronomy', src: astronomy, name: 'Astronomy' },
+  { url: '/chemistry', src: chemistry, name: 'Chemistry' },
+  { url: '/geography', src: geography, name: 'Geography' },
 ];
 
 const Sidebar = () => {

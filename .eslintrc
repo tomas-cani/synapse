@@ -1,6 +1,10 @@
 {
   "extends": "airbnb",
   "rules": {
-    "no-mixed-operators": 0
+    "no-mixed-operators": 0,
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "to" ]
+    }]
   }
 }

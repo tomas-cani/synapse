@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { Link } from 'react-router-dom';
+
 import './Icon.css';
 
 const Icon = props => (
-  <a className="Icon" href={props.url}>
+  <Link className="Icon" to={props.url}>
     <img src={props.src} alt={props.name} />
-  </a>
+  </Link>
 );
 
 Icon.propTypes = {
