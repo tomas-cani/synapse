@@ -34,15 +34,15 @@ class Workout extends React.Component {
   nextQuestion() {
     if (this.state.attempts >= Number(this.props.maxExercises)) {
       this.props.onWorkoutEnd(this.state.correctAnswers);
+    } else {
+      const randomQuestion = this.props.subjectData.getRandomQuestion(this.props.maxDataIndex);
+      this.setState({
+        correctOption: randomQuestion.correctOption,
+        options: randomQuestion.options,
+        property: randomQuestion.property,
+        selectedOptionId: null,
+      });
     }
-
-    const randomQuestion = this.props.subjectData.getRandomQuestion(this.props.maxDataIndex);
-    this.setState({
-      correctOption: randomQuestion.correctOption,
-      options: randomQuestion.options,
-      property: randomQuestion.property,
-      selectedOptionId: null,
-    });
   }
 
   updateScore(id) {
