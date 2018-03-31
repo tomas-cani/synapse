@@ -115,7 +115,7 @@ class Subject extends React.Component {
 }
 
 Subject.propTypes = {
-  difficultyLevels: PropTypes.array.isRequired,
+  difficultyLevels: PropTypes.arrayOf(PropTypes.any.isRequired).isRequired,
   questionComponent: PropTypes.func.isRequired,
   subjectData: PropTypes.arrayOf(PropTypes.any.isRequired).isRequired,
 };
