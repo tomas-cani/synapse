@@ -22,7 +22,7 @@ class Options extends Component {
       <Option
         key={option.id}
         id={option.id}
-        name={option[this.props.property]}
+        name={String(option[this.props.property])}
         onOptionSelect={this.handleOptionSelect}
         selectedOptionId={this.props.selectedOptionId}
         correctOptionId={this.props.correctOption.id}

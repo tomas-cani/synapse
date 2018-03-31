@@ -10,7 +10,7 @@ import './Subject.css';
 
 const defaultState = {
   difficulty: 1,
-  maxExercises: '5',
+  maxExercises: 5,
   correctAnswers: 0,
   workoutStarted: false,
   workoutEnded: false,

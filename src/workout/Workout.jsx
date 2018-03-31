@@ -77,7 +77,7 @@ class Workout extends React.Component {
 }
 
 Workout.propTypes = {
-  maxExercises: PropTypes.string.isRequired,
+  maxExercises: PropTypes.number.isRequired,
   maxDataIndex: PropTypes.number.isRequired,
   onWorkoutEnd: PropTypes.func.isRequired,
   questionComponent: PropTypes.func.isRequired,

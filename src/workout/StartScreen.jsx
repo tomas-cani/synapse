@@ -15,7 +15,7 @@ class StartScreen extends React.Component {
   }
 
   handleInput(e) {
-    this.props.handleConfig(e.target.value);
+    this.props.handleConfig(Number(e.target.value));
   }
 
   handleDifficultyChange(e, value) {
@@ -35,9 +35,9 @@ class StartScreen extends React.Component {
           onChange={this.handleInput}
           valueSelected={this.props.maxExercises}
         >
-          <RadioButton value="5" label="5" className="radio" />
-          <RadioButton value="10" label="10" className="radio" />
-          <RadioButton value="20" label="20" className="radio" />
+          <RadioButton value={5} label="5" className="radio" />
+          <RadioButton value={10} label="10" className="radio" />
+          <RadioButton value={20} label="20" className="radio" />
         </RadioButtonGroup>
         <h2>Difficulty Level: {this.props.difficulty}</h2>
         <Slider
@@ -60,7 +60,7 @@ StartScreen.propTypes = {
   difficultyDescription: PropTypes.string.isRequired,
   handleConfig: PropTypes.func.isRequired,
   handleDifficultyChange: PropTypes.func.isRequired,
-  maxExercises: PropTypes.string.isRequired,
+  maxExercises: PropTypes.number.isRequired,
   onStart: PropTypes.func.isRequired,
 };
 
