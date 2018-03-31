@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import periodicTable from './periodicTable';
 import Element from './Element';
@@ -28,14 +28,12 @@ const difficultyLevels = [
   },
 ];
 
-class Chemistry extends Component {
-  render() {
-    return (<Subject
-      difficultyLevels={difficultyLevels}
-      questionComponent={Element}
-      subjectData={periodicTable}
-    />);
-  }
-}
+const Chemistry = () => (
+  <Subject
+    difficultyLevels={difficultyLevels}
+    questionComponent={Element}
+    subjectData={periodicTable}
+  />
+);
 
 export default Chemistry;
