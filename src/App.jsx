@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Redirect } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Sidebar from './sidebar/Sidebar';
-import Subject from './subject/Subject';
+import Chemistry from './chemistry/Chemistry';
 
 import './App.css';
 import './material-ui.css';
@@ -15,7 +15,9 @@ class App extends Component {
         <MuiThemeProvider>
           <div className="App container">
             <Sidebar />
-            <Subject />
+            <Switch>
+              <Route path="/chemistry" component={Chemistry} />
+            </Switch>
           </div>
           <Redirect to="/chemistry" />
         </MuiThemeProvider>

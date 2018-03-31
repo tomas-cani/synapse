@@ -1,22 +1,9 @@
 import React, { Component } from 'react';
 
 import periodicTable from './periodicTable';
-
 import Element from './Element';
-import EndScreen from '../workout/EndScreen';
-import StartScreen from '../workout/StartScreen';
-import Workout from '../workout/Workout';
-import SubjectData from '../workout/subjectData';
-
+import Subject from '../subject/Subject';
 import './Chemistry.css';
-
-const defaultState = {
-  difficulty: 1,
-  maxExercises: '5',
-  correctAnswers: 0,
-  workoutStarted: false,
-  workoutEnded: false,
-};
 
 const difficultyLevels = [
   {
@@ -42,100 +29,12 @@ const difficultyLevels = [
 ];
 
 class Chemistry extends Component {
-  constructor(props) {
-    super(props);
-    this.state = defaultState;
-    this.subjectData = new SubjectData(periodicTable, ['id', 'name', 'number']);
-    this.handleConfig = this.handleConfig.bind(this);
-    this.handleDifficultyChange = this.handleDifficultyChange.bind(this);
-    this.handleRetry = this.handleRetry.bind(this);
-    this.handleStart = this.handleStart.bind(this);
-    this.handleWorkoutEnd = this.handleWorkoutEnd.bind(this);
-  }
-
-  getEndScreen() {
-    return (
-      <EndScreen
-        attempts={this.state.maxExercises}
-        correctAnswers={this.state.correctAnswers}
-        onRetry={this.handleRetry}
-      />
-    );
-  }
-
-  getStartScreen() {
-    return (
-      <StartScreen
-        difficulty={this.state.difficulty}
-        difficultyDescription={difficultyLevels[this.state.difficulty - 1].description}
-        onStart={this.handleStart}
-        handleConfig={this.handleConfig}
-        handleDifficultyChange={this.handleDifficultyChange}
-        maxExercises={this.state.maxExercises}
-      />
-    );
-  }
-
-  getWorkout() {
-    return (
-      <Workout
-        maxExercises={this.state.maxExercises}
-        maxDataIndex={difficultyLevels[this.state.difficulty - 1].max}
-        onWorkoutEnd={this.handleWorkoutEnd}
-        questionComponent={Element}
-        subjectData={this.subjectData}
-      />
-    );
-  }
-
-  handleConfig(maxExercises) {
-    this.setState({
-      maxExercises,
-    });
-  }
-
-  handleDifficultyChange(difficulty) {
-    this.setState({
-      difficulty,
-    });
-  }
-
-  handleRetry() {
-    this.resetState();
-  }
-
-  handleStart() {
-    this.setState({
-      workoutStarted: true,
-    });
-  }
-
-  handleWorkoutEnd(correctAnswers) {
-    this.setState({
-      correctAnswers,
-      workoutEnded: true,
-    });
-  }
-
-  resetState() {
-    this.setState(defaultState);
-  }
-
   render() {
-    let content;
-    if (!this.state.workoutStarted) {
-      content = this.getStartScreen();
-    } else if (!this.state.workoutEnded) {
-      content = this.getWorkout();
-    } else {
-      content = this.getEndScreen();
-    }
-
-    return (
-      <div className="Chemistry container">
-        {content}
-      </div>
-    );
+    return (<Subject
+      difficultyLevels={difficultyLevels}
+      questionComponent={Element}
+      subjectData={periodicTable}
+    />);
   }
 }
 

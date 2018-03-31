@@ -80,8 +80,8 @@ Workout.propTypes = {
   maxExercises: PropTypes.string.isRequired,
   maxDataIndex: PropTypes.number.isRequired,
   onWorkoutEnd: PropTypes.func.isRequired,
-  questionComponent: PropTypes.element.isRequired,
-  subjectData: PropTypes.arrayOf(PropTypes.any.isRequired).isRequired,
+  questionComponent: PropTypes.func.isRequired,
+  subjectData: PropTypes.object.isRequired,
 };
 
 export default Workout;
