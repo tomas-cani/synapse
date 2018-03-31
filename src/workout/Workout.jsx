@@ -81,7 +81,10 @@ Workout.propTypes = {
   maxDataIndex: PropTypes.number.isRequired,
   onWorkoutEnd: PropTypes.func.isRequired,
   questionComponent: PropTypes.func.isRequired,
-  subjectData: PropTypes.object.isRequired,
+  subjectData: PropTypes.shape({
+    getOptions: PropTypes.func.isRequired,
+    getRandomQuestion: PropTypes.func.isRequired,
+  }).isRequired,
 };
 
 export default Workout;
