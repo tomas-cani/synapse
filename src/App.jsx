@@ -18,8 +18,8 @@ class App extends Component {
             <Switch>
               <Route path="/chemistry" component={Chemistry} />
             </Switch>
+            <Redirect to="/chemistry" />
           </div>
-          <Redirect to="/chemistry" />
         </MuiThemeProvider>
       </BrowserRouter>
     );
