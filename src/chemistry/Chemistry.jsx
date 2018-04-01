@@ -31,6 +31,7 @@ const difficultyLevels = [
 const Chemistry = () => (
   <Subject
     difficultyLevels={difficultyLevels}
+    name="Chemistry"
     questionComponent={Element}
     subjectData={periodicTable}
   />

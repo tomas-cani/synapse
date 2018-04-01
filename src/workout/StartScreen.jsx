@@ -25,8 +25,9 @@ class StartScreen extends React.Component {
   render() {
     return (
       <Screen>
-        <h1>Configure workout</h1>
-        <h2># Exercises</h2>
+        <h1>{this.props.title}</h1>
+        <h2>Configure workout</h2>
+        <h3># Exercises</h3>
 
         <RadioButtonGroup
           className=""
@@ -39,7 +40,7 @@ class StartScreen extends React.Component {
           <RadioButton value={10} label="10" className="radio" />
           <RadioButton value={20} label="20" className="radio" />
         </RadioButtonGroup>
-        <h2>Difficulty Level: {this.props.difficulty}</h2>
+        <h3>Difficulty Level: {this.props.difficulty}</h3>
         <Slider
           className="slider"
           min={1}
@@ -62,6 +63,7 @@ StartScreen.propTypes = {
   handleDifficultyChange: PropTypes.func.isRequired,
   maxExercises: PropTypes.number.isRequired,
   onStart: PropTypes.func.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default StartScreen;

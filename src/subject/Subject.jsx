@@ -43,6 +43,7 @@ class Subject extends React.Component {
       <StartScreen
         difficulty={this.state.difficulty}
         difficultyDescription={this.props.difficultyLevels[this.state.difficulty - 1].description}
+        title={this.props.name}
         onStart={this.handleStart}
         handleConfig={this.handleConfig}
         handleDifficultyChange={this.handleDifficultyChange}
@@ -116,6 +117,7 @@ class Subject extends React.Component {
 
 Subject.propTypes = {
   difficultyLevels: PropTypes.arrayOf(PropTypes.any.isRequired).isRequired,
+  name: PropTypes.string.isRequired,
   questionComponent: PropTypes.func.isRequired,
   subjectData: PropTypes.arrayOf(PropTypes.any.isRequired).isRequired,
 };
