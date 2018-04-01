@@ -20,7 +20,7 @@ class Subject extends React.Component {
   constructor(props) {
     super(props);
     this.state = defaultState;
-    this.subjectData = new SubjectData(this.props.subjectData, ['id', 'name', 'number']);
+    this.subjectData = new SubjectData(this.props.subjectData, this.props.subjectDataProperties);
     this.handleConfig = this.handleConfig.bind(this);
     this.handleDifficultyChange = this.handleDifficultyChange.bind(this);
     this.handleRetry = this.handleRetry.bind(this);
@@ -120,6 +120,7 @@ Subject.propTypes = {
   name: PropTypes.string.isRequired,
   questionComponent: PropTypes.func.isRequired,
   subjectData: PropTypes.arrayOf(PropTypes.any.isRequired).isRequired,
+  subjectDataProperties: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
 };
 
 export default Subject;

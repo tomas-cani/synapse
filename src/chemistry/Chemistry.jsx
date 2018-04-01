@@ -34,6 +34,7 @@ const Chemistry = () => (
     name="Chemistry"
     questionComponent={Element}
     subjectData={periodicTable}
+    subjectDataProperties={['id', 'name', 'number']}
   />
 );
 
