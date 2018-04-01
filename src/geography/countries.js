@@ -1,7 +1,7 @@
 export default [
   {
     name: 'Afghanistan',
-    alpha3Code: 'AFG',
+    id: 'AFG',
     capital: 'Kabul',
     region: 'Asia',
     subregion: 'Southern Asia',
@@ -14,7 +14,7 @@ export default [
     flag: 'https://restcountries.eu/data/afg.svg',
   }, {
     name: 'Albania',
-    alpha3Code: 'ALB',
+    id: 'ALB',
     capital: 'Tirana',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -27,7 +27,7 @@ export default [
     flag: 'https://restcountries.eu/data/alb.svg',
   }, {
     name: 'Algeria',
-    alpha3Code: 'DZA',
+    id: 'DZA',
     capital: 'Algiers',
     region: 'Africa',
     subregion: 'Northern Africa',
@@ -40,7 +40,7 @@ export default [
     flag: 'https://restcountries.eu/data/dza.svg',
   }, {
     name: 'Andorra',
-    alpha3Code: 'AND',
+    id: 'AND',
     capital: 'Andorra la Vella',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -53,7 +53,7 @@ export default [
     flag: 'https://restcountries.eu/data/and.svg',
   }, {
     name: 'Angola',
-    alpha3Code: 'AGO',
+    id: 'AGO',
     capital: 'Luanda',
     region: 'Africa',
     subregion: 'Middle Africa',
@@ -66,7 +66,7 @@ export default [
     flag: 'https://restcountries.eu/data/ago.svg',
   }, {
     name: 'Antigua and Barbuda',
-    alpha3Code: 'ATG',
+    id: 'ATG',
     capital: "Saint John's",
     region: 'Americas',
     subregion: 'Caribbean',
@@ -79,7 +79,7 @@ export default [
     flag: 'https://restcountries.eu/data/atg.svg',
   }, {
     name: 'Argentina',
-    alpha3Code: 'ARG',
+    id: 'ARG',
     capital: 'Buenos Aires',
     region: 'Americas',
     subregion: 'South America',
@@ -92,7 +92,7 @@ export default [
     flag: 'https://restcountries.eu/data/arg.svg',
   }, {
     name: 'Armenia',
-    alpha3Code: 'ARM',
+    id: 'ARM',
     capital: 'Yerevan',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -105,7 +105,7 @@ export default [
     flag: 'https://restcountries.eu/data/arm.svg',
   }, {
     name: 'Australia',
-    alpha3Code: 'AUS',
+    id: 'AUS',
     capital: 'Canberra',
     region: 'Oceania',
     subregion: 'Australia and New Zealand',
@@ -118,7 +118,7 @@ export default [
     flag: 'https://restcountries.eu/data/aus.svg',
   }, {
     name: 'Austria',
-    alpha3Code: 'AUT',
+    id: 'AUT',
     capital: 'Vienna',
     region: 'Europe',
     subregion: 'Western Europe',
@@ -131,7 +131,7 @@ export default [
     flag: 'https://restcountries.eu/data/aut.svg',
   }, {
     name: 'Azerbaijan',
-    alpha3Code: 'AZE',
+    id: 'AZE',
     capital: 'Baku',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -144,7 +144,7 @@ export default [
     flag: 'https://restcountries.eu/data/aze.svg',
   }, {
     name: 'Bahamas',
-    alpha3Code: 'BHS',
+    id: 'BHS',
     capital: 'Nassau',
     region: 'Americas',
     subregion: 'Caribbean',
@@ -157,7 +157,7 @@ export default [
     flag: 'https://restcountries.eu/data/bhs.svg',
   }, {
     name: 'Bahrain',
-    alpha3Code: 'BHR',
+    id: 'BHR',
     capital: 'Manama',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -170,7 +170,7 @@ export default [
     flag: 'https://restcountries.eu/data/bhr.svg',
   }, {
     name: 'Bangladesh',
-    alpha3Code: 'BGD',
+    id: 'BGD',
     capital: 'Dhaka',
     region: 'Asia',
     subregion: 'Southern Asia',
@@ -183,7 +183,7 @@ export default [
     flag: 'https://restcountries.eu/data/bgd.svg',
   }, {
     name: 'Barbados',
-    alpha3Code: 'BRB',
+    id: 'BRB',
     capital: 'Bridgetown',
     region: 'Americas',
     subregion: 'Caribbean',
@@ -196,7 +196,7 @@ export default [
     flag: 'https://restcountries.eu/data/brb.svg',
   }, {
     name: 'Belarus',
-    alpha3Code: 'BLR',
+    id: 'BLR',
     capital: 'Minsk',
     region: 'Europe',
     subregion: 'Eastern Europe',
@@ -209,7 +209,7 @@ export default [
     flag: 'https://restcountries.eu/data/blr.svg',
   }, {
     name: 'Belgium',
-    alpha3Code: 'BEL',
+    id: 'BEL',
     capital: 'Brussels',
     region: 'Europe',
     subregion: 'Western Europe',
@@ -222,7 +222,7 @@ export default [
     flag: 'https://restcountries.eu/data/bel.svg',
   }, {
     name: 'Belize',
-    alpha3Code: 'BLZ',
+    id: 'BLZ',
     capital: 'Belmopan',
     region: 'Americas',
     subregion: 'Central America',
@@ -235,7 +235,7 @@ export default [
     flag: 'https://restcountries.eu/data/blz.svg',
   }, {
     name: 'Benin',
-    alpha3Code: 'BEN',
+    id: 'BEN',
     capital: 'Porto-Novo',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -248,7 +248,7 @@ export default [
     flag: 'https://restcountries.eu/data/ben.svg',
   }, {
     name: 'Bhutan',
-    alpha3Code: 'BTN',
+    id: 'BTN',
     capital: 'Thimphu',
     region: 'Asia',
     subregion: 'Southern Asia',
@@ -261,7 +261,7 @@ export default [
     flag: 'https://restcountries.eu/data/btn.svg',
   }, {
     name: 'Bolivia (Plurinational State of)',
-    alpha3Code: 'BOL',
+    id: 'BOL',
     capital: 'Sucre',
     region: 'Americas',
     subregion: 'South America',
@@ -274,7 +274,7 @@ export default [
     flag: 'https://restcountries.eu/data/bol.svg',
   }, {
     name: 'Bosnia and Herzegovina',
-    alpha3Code: 'BIH',
+    id: 'BIH',
     capital: 'Sarajevo',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -287,7 +287,7 @@ export default [
     flag: 'https://restcountries.eu/data/bih.svg',
   }, {
     name: 'Botswana',
-    alpha3Code: 'BWA',
+    id: 'BWA',
     capital: 'Gaborone',
     region: 'Africa',
     subregion: 'Southern Africa',
@@ -300,7 +300,7 @@ export default [
     flag: 'https://restcountries.eu/data/bwa.svg',
   }, {
     name: 'Brazil',
-    alpha3Code: 'BRA',
+    id: 'BRA',
     capital: 'Brasília',
     region: 'Americas',
     subregion: 'South America',
@@ -313,7 +313,7 @@ export default [
     flag: 'https://restcountries.eu/data/bra.svg',
   }, {
     name: 'Brunei Darussalam',
-    alpha3Code: 'BRN',
+    id: 'BRN',
     capital: 'Bandar Seri Begawan',
     region: 'Asia',
     subregion: 'South-Eastern Asia',
@@ -326,7 +326,7 @@ export default [
     flag: 'https://restcountries.eu/data/brn.svg',
   }, {
     name: 'Bulgaria',
-    alpha3Code: 'BGR',
+    id: 'BGR',
     capital: 'Sofia',
     region: 'Europe',
     subregion: 'Eastern Europe',
@@ -339,7 +339,7 @@ export default [
     flag: 'https://restcountries.eu/data/bgr.svg',
   }, {
     name: 'Burkina Faso',
-    alpha3Code: 'BFA',
+    id: 'BFA',
     capital: 'Ouagadougou',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -352,7 +352,7 @@ export default [
     flag: 'https://restcountries.eu/data/bfa.svg',
   }, {
     name: 'Burundi',
-    alpha3Code: 'BDI',
+    id: 'BDI',
     capital: 'Bujumbura',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -365,7 +365,7 @@ export default [
     flag: 'https://restcountries.eu/data/bdi.svg',
   }, {
     name: 'Cambodia',
-    alpha3Code: 'KHM',
+    id: 'KHM',
     capital: 'Phnom Penh',
     region: 'Asia',
     subregion: 'South-Eastern Asia',
@@ -378,7 +378,7 @@ export default [
     flag: 'https://restcountries.eu/data/khm.svg',
   }, {
     name: 'Cameroon',
-    alpha3Code: 'CMR',
+    id: 'CMR',
     capital: 'Yaoundé',
     region: 'Africa',
     subregion: 'Middle Africa',
@@ -391,7 +391,7 @@ export default [
     flag: 'https://restcountries.eu/data/cmr.svg',
   }, {
     name: 'Canada',
-    alpha3Code: 'CAN',
+    id: 'CAN',
     capital: 'Ottawa',
     region: 'Americas',
     subregion: 'Northern America',
@@ -404,7 +404,7 @@ export default [
     flag: 'https://restcountries.eu/data/can.svg',
   }, {
     name: 'Cabo Verde',
-    alpha3Code: 'CPV',
+    id: 'CPV',
     capital: 'Praia',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -417,7 +417,7 @@ export default [
     flag: 'https://restcountries.eu/data/cpv.svg',
   }, {
     name: 'Central African Republic',
-    alpha3Code: 'CAF',
+    id: 'CAF',
     capital: 'Bangui',
     region: 'Africa',
     subregion: 'Middle Africa',
@@ -430,7 +430,7 @@ export default [
     flag: 'https://restcountries.eu/data/caf.svg',
   }, {
     name: 'Chad',
-    alpha3Code: 'TCD',
+    id: 'TCD',
     capital: "N'Djamena",
     region: 'Africa',
     subregion: 'Middle Africa',
@@ -443,7 +443,7 @@ export default [
     flag: 'https://restcountries.eu/data/tcd.svg',
   }, {
     name: 'Chile',
-    alpha3Code: 'CHL',
+    id: 'CHL',
     capital: 'Santiago',
     region: 'Americas',
     subregion: 'South America',
@@ -456,7 +456,7 @@ export default [
     flag: 'https://restcountries.eu/data/chl.svg',
   }, {
     name: 'China',
-    alpha3Code: 'CHN',
+    id: 'CHN',
     capital: 'Beijing',
     region: 'Asia',
     subregion: 'Eastern Asia',
@@ -469,7 +469,7 @@ export default [
     flag: 'https://restcountries.eu/data/chn.svg',
   }, {
     name: 'Colombia',
-    alpha3Code: 'COL',
+    id: 'COL',
     capital: 'Bogotá',
     region: 'Americas',
     subregion: 'South America',
@@ -482,7 +482,7 @@ export default [
     flag: 'https://restcountries.eu/data/col.svg',
   }, {
     name: 'Comoros',
-    alpha3Code: 'COM',
+    id: 'COM',
     capital: 'Moroni',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -495,7 +495,7 @@ export default [
     flag: 'https://restcountries.eu/data/com.svg',
   }, {
     name: 'Congo',
-    alpha3Code: 'COG',
+    id: 'COG',
     capital: 'Brazzaville',
     region: 'Africa',
     subregion: 'Middle Africa',
@@ -508,7 +508,7 @@ export default [
     flag: 'https://restcountries.eu/data/cog.svg',
   }, {
     name: 'Congo (Democratic Republic of the)',
-    alpha3Code: 'COD',
+    id: 'COD',
     capital: 'Kinshasa',
     region: 'Africa',
     subregion: 'Middle Africa',
@@ -521,7 +521,7 @@ export default [
     flag: 'https://restcountries.eu/data/cod.svg',
   }, {
     name: 'Costa Rica',
-    alpha3Code: 'CRI',
+    id: 'CRI',
     capital: 'San José',
     region: 'Americas',
     subregion: 'Central America',
@@ -534,7 +534,7 @@ export default [
     flag: 'https://restcountries.eu/data/cri.svg',
   }, {
     name: 'Croatia',
-    alpha3Code: 'HRV',
+    id: 'HRV',
     capital: 'Zagreb',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -547,7 +547,7 @@ export default [
     flag: 'https://restcountries.eu/data/hrv.svg',
   }, {
     name: 'Cuba',
-    alpha3Code: 'CUB',
+    id: 'CUB',
     capital: 'Havana',
     region: 'Americas',
     subregion: 'Caribbean',
@@ -560,7 +560,7 @@ export default [
     flag: 'https://restcountries.eu/data/cub.svg',
   }, {
     name: 'Cyprus',
-    alpha3Code: 'CYP',
+    id: 'CYP',
     capital: 'Nicosia',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -573,7 +573,7 @@ export default [
     flag: 'https://restcountries.eu/data/cyp.svg',
   }, {
     name: 'Czech Republic',
-    alpha3Code: 'CZE',
+    id: 'CZE',
     capital: 'Prague',
     region: 'Europe',
     subregion: 'Eastern Europe',
@@ -586,7 +586,7 @@ export default [
     flag: 'https://restcountries.eu/data/cze.svg',
   }, {
     name: 'Denmark',
-    alpha3Code: 'DNK',
+    id: 'DNK',
     capital: 'Copenhagen',
     region: 'Europe',
     subregion: 'Northern Europe',
@@ -599,7 +599,7 @@ export default [
     flag: 'https://restcountries.eu/data/dnk.svg',
   }, {
     name: 'Djibouti',
-    alpha3Code: 'DJI',
+    id: 'DJI',
     capital: 'Djibouti',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -612,7 +612,7 @@ export default [
     flag: 'https://restcountries.eu/data/dji.svg',
   }, {
     name: 'Dominica',
-    alpha3Code: 'DMA',
+    id: 'DMA',
     capital: 'Roseau',
     region: 'Americas',
     subregion: 'Caribbean',
@@ -625,7 +625,7 @@ export default [
     flag: 'https://restcountries.eu/data/dma.svg',
   }, {
     name: 'Dominican Republic',
-    alpha3Code: 'DOM',
+    id: 'DOM',
     capital: 'Santo Domingo',
     region: 'Americas',
     subregion: 'Caribbean',
@@ -638,7 +638,7 @@ export default [
     flag: 'https://restcountries.eu/data/dom.svg',
   }, {
     name: 'Ecuador',
-    alpha3Code: 'ECU',
+    id: 'ECU',
     capital: 'Quito',
     region: 'Americas',
     subregion: 'South America',
@@ -651,7 +651,7 @@ export default [
     flag: 'https://restcountries.eu/data/ecu.svg',
   }, {
     name: 'Egypt',
-    alpha3Code: 'EGY',
+    id: 'EGY',
     capital: 'Cairo',
     region: 'Africa',
     subregion: 'Northern Africa',
@@ -664,7 +664,7 @@ export default [
     flag: 'https://restcountries.eu/data/egy.svg',
   }, {
     name: 'El Salvador',
-    alpha3Code: 'SLV',
+    id: 'SLV',
     capital: 'San Salvador',
     region: 'Americas',
     subregion: 'Central America',
@@ -677,7 +677,7 @@ export default [
     flag: 'https://restcountries.eu/data/slv.svg',
   }, {
     name: 'Equatorial Guinea',
-    alpha3Code: 'GNQ',
+    id: 'GNQ',
     capital: 'Malabo',
     region: 'Africa',
     subregion: 'Middle Africa',
@@ -690,7 +690,7 @@ export default [
     flag: 'https://restcountries.eu/data/gnq.svg',
   }, {
     name: 'Eritrea',
-    alpha3Code: 'ERI',
+    id: 'ERI',
     capital: 'Asmara',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -703,7 +703,7 @@ export default [
     flag: 'https://restcountries.eu/data/eri.svg',
   }, {
     name: 'Estonia',
-    alpha3Code: 'EST',
+    id: 'EST',
     capital: 'Tallinn',
     region: 'Europe',
     subregion: 'Northern Europe',
@@ -716,7 +716,7 @@ export default [
     flag: 'https://restcountries.eu/data/est.svg',
   }, {
     name: 'Ethiopia',
-    alpha3Code: 'ETH',
+    id: 'ETH',
     capital: 'Addis Ababa',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -729,7 +729,7 @@ export default [
     flag: 'https://restcountries.eu/data/eth.svg',
   }, {
     name: 'Fiji',
-    alpha3Code: 'FJI',
+    id: 'FJI',
     capital: 'Suva',
     region: 'Oceania',
     subregion: 'Melanesia',
@@ -742,7 +742,7 @@ export default [
     flag: 'https://restcountries.eu/data/fji.svg',
   }, {
     name: 'Finland',
-    alpha3Code: 'FIN',
+    id: 'FIN',
     capital: 'Helsinki',
     region: 'Europe',
     subregion: 'Northern Europe',
@@ -755,7 +755,7 @@ export default [
     flag: 'https://restcountries.eu/data/fin.svg',
   }, {
     name: 'France',
-    alpha3Code: 'FRA',
+    id: 'FRA',
     capital: 'Paris',
     region: 'Europe',
     subregion: 'Western Europe',
@@ -768,7 +768,7 @@ export default [
     flag: 'https://restcountries.eu/data/fra.svg',
   }, {
     name: 'Gabon',
-    alpha3Code: 'GAB',
+    id: 'GAB',
     capital: 'Libreville',
     region: 'Africa',
     subregion: 'Middle Africa',
@@ -781,7 +781,7 @@ export default [
     flag: 'https://restcountries.eu/data/gab.svg',
   }, {
     name: 'Gambia',
-    alpha3Code: 'GMB',
+    id: 'GMB',
     capital: 'Banjul',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -794,7 +794,7 @@ export default [
     flag: 'https://restcountries.eu/data/gmb.svg',
   }, {
     name: 'Georgia',
-    alpha3Code: 'GEO',
+    id: 'GEO',
     capital: 'Tbilisi',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -807,7 +807,7 @@ export default [
     flag: 'https://restcountries.eu/data/geo.svg',
   }, {
     name: 'Germany',
-    alpha3Code: 'DEU',
+    id: 'DEU',
     capital: 'Berlin',
     region: 'Europe',
     subregion: 'Western Europe',
@@ -820,7 +820,7 @@ export default [
     flag: 'https://restcountries.eu/data/deu.svg',
   }, {
     name: 'Ghana',
-    alpha3Code: 'GHA',
+    id: 'GHA',
     capital: 'Accra',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -833,7 +833,7 @@ export default [
     flag: 'https://restcountries.eu/data/gha.svg',
   }, {
     name: 'Greece',
-    alpha3Code: 'GRC',
+    id: 'GRC',
     capital: 'Athens',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -846,7 +846,7 @@ export default [
     flag: 'https://restcountries.eu/data/grc.svg',
   }, {
     name: 'Grenada',
-    alpha3Code: 'GRD',
+    id: 'GRD',
     capital: "St. George's",
     region: 'Americas',
     subregion: 'Caribbean',
@@ -859,7 +859,7 @@ export default [
     flag: 'https://restcountries.eu/data/grd.svg',
   }, {
     name: 'Guatemala',
-    alpha3Code: 'GTM',
+    id: 'GTM',
     capital: 'Guatemala City',
     region: 'Americas',
     subregion: 'Central America',
@@ -872,7 +872,7 @@ export default [
     flag: 'https://restcountries.eu/data/gtm.svg',
   }, {
     name: 'Guinea',
-    alpha3Code: 'GIN',
+    id: 'GIN',
     capital: 'Conakry',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -885,7 +885,7 @@ export default [
     flag: 'https://restcountries.eu/data/gin.svg',
   }, {
     name: 'Guinea-Bissau',
-    alpha3Code: 'GNB',
+    id: 'GNB',
     capital: 'Bissau',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -898,7 +898,7 @@ export default [
     flag: 'https://restcountries.eu/data/gnb.svg',
   }, {
     name: 'Guyana',
-    alpha3Code: 'GUY',
+    id: 'GUY',
     capital: 'Georgetown',
     region: 'Americas',
     subregion: 'South America',
@@ -911,7 +911,7 @@ export default [
     flag: 'https://restcountries.eu/data/guy.svg',
   }, {
     name: 'Haiti',
-    alpha3Code: 'HTI',
+    id: 'HTI',
     capital: 'Port-au-Prince',
     region: 'Americas',
     subregion: 'Caribbean',
@@ -924,7 +924,7 @@ export default [
     flag: 'https://restcountries.eu/data/hti.svg',
   }, {
     name: 'Holy See',
-    alpha3Code: 'VAT',
+    id: 'VAT',
     capital: 'Rome',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -937,7 +937,7 @@ export default [
     flag: 'https://restcountries.eu/data/vat.svg',
   }, {
     name: 'Honduras',
-    alpha3Code: 'HND',
+    id: 'HND',
     capital: 'Tegucigalpa',
     region: 'Americas',
     subregion: 'Central America',
@@ -950,7 +950,7 @@ export default [
     flag: 'https://restcountries.eu/data/hnd.svg',
   }, {
     name: 'Hungary',
-    alpha3Code: 'HUN',
+    id: 'HUN',
     capital: 'Budapest',
     region: 'Europe',
     subregion: 'Eastern Europe',
@@ -963,7 +963,7 @@ export default [
     flag: 'https://restcountries.eu/data/hun.svg',
   }, {
     name: 'Iceland',
-    alpha3Code: 'ISL',
+    id: 'ISL',
     capital: 'Reykjavík',
     region: 'Europe',
     subregion: 'Northern Europe',
@@ -976,7 +976,7 @@ export default [
     flag: 'https://restcountries.eu/data/isl.svg',
   }, {
     name: 'India',
-    alpha3Code: 'IND',
+    id: 'IND',
     capital: 'New Delhi',
     region: 'Asia',
     subregion: 'Southern Asia',
@@ -989,7 +989,7 @@ export default [
     flag: 'https://restcountries.eu/data/ind.svg',
   }, {
     name: 'Indonesia',
-    alpha3Code: 'IDN',
+    id: 'IDN',
     capital: 'Jakarta',
     region: 'Asia',
     subregion: 'South-Eastern Asia',
@@ -1002,7 +1002,7 @@ export default [
     flag: 'https://restcountries.eu/data/idn.svg',
   }, {
     name: "Côte d'Ivoire",
-    alpha3Code: 'CIV',
+    id: 'CIV',
     capital: 'Yamoussoukro',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -1015,7 +1015,7 @@ export default [
     flag: 'https://restcountries.eu/data/civ.svg',
   }, {
     name: 'Iran (Islamic Republic of)',
-    alpha3Code: 'IRN',
+    id: 'IRN',
     capital: 'Tehran',
     region: 'Asia',
     subregion: 'Southern Asia',
@@ -1028,7 +1028,7 @@ export default [
     flag: 'https://restcountries.eu/data/irn.svg',
   }, {
     name: 'Iraq',
-    alpha3Code: 'IRQ',
+    id: 'IRQ',
     capital: 'Baghdad',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -1041,7 +1041,7 @@ export default [
     flag: 'https://restcountries.eu/data/irq.svg',
   }, {
     name: 'Ireland',
-    alpha3Code: 'IRL',
+    id: 'IRL',
     capital: 'Dublin',
     region: 'Europe',
     subregion: 'Northern Europe',
@@ -1054,7 +1054,7 @@ export default [
     flag: 'https://restcountries.eu/data/irl.svg',
   }, {
     name: 'Israel',
-    alpha3Code: 'ISR',
+    id: 'ISR',
     capital: 'Jerusalem',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -1067,7 +1067,7 @@ export default [
     flag: 'https://restcountries.eu/data/isr.svg',
   }, {
     name: 'Italy',
-    alpha3Code: 'ITA',
+    id: 'ITA',
     capital: 'Rome',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -1080,7 +1080,7 @@ export default [
     flag: 'https://restcountries.eu/data/ita.svg',
   }, {
     name: 'Jamaica',
-    alpha3Code: 'JAM',
+    id: 'JAM',
     capital: 'Kingston',
     region: 'Americas',
     subregion: 'Caribbean',
@@ -1093,7 +1093,7 @@ export default [
     flag: 'https://restcountries.eu/data/jam.svg',
   }, {
     name: 'Japan',
-    alpha3Code: 'JPN',
+    id: 'JPN',
     capital: 'Tokyo',
     region: 'Asia',
     subregion: 'Eastern Asia',
@@ -1106,7 +1106,7 @@ export default [
     flag: 'https://restcountries.eu/data/jpn.svg',
   }, {
     name: 'Jordan',
-    alpha3Code: 'JOR',
+    id: 'JOR',
     capital: 'Amman',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -1119,7 +1119,7 @@ export default [
     flag: 'https://restcountries.eu/data/jor.svg',
   }, {
     name: 'Kazakhstan',
-    alpha3Code: 'KAZ',
+    id: 'KAZ',
     capital: 'Astana',
     region: 'Asia',
     subregion: 'Central Asia',
@@ -1132,7 +1132,7 @@ export default [
     flag: 'https://restcountries.eu/data/kaz.svg',
   }, {
     name: 'Kenya',
-    alpha3Code: 'KEN',
+    id: 'KEN',
     capital: 'Nairobi',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -1145,7 +1145,7 @@ export default [
     flag: 'https://restcountries.eu/data/ken.svg',
   }, {
     name: 'Kiribati',
-    alpha3Code: 'KIR',
+    id: 'KIR',
     capital: 'South Tarawa',
     region: 'Oceania',
     subregion: 'Micronesia',
@@ -1158,7 +1158,7 @@ export default [
     flag: 'https://restcountries.eu/data/kir.svg',
   }, {
     name: 'Kuwait',
-    alpha3Code: 'KWT',
+    id: 'KWT',
     capital: 'Kuwait City',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -1171,7 +1171,7 @@ export default [
     flag: 'https://restcountries.eu/data/kwt.svg',
   }, {
     name: 'Kyrgyzstan',
-    alpha3Code: 'KGZ',
+    id: 'KGZ',
     capital: 'Bishkek',
     region: 'Asia',
     subregion: 'Central Asia',
@@ -1184,7 +1184,7 @@ export default [
     flag: 'https://restcountries.eu/data/kgz.svg',
   }, {
     name: "Lao People's Democratic Republic",
-    alpha3Code: 'LAO',
+    id: 'LAO',
     capital: 'Vientiane',
     region: 'Asia',
     subregion: 'South-Eastern Asia',
@@ -1197,7 +1197,7 @@ export default [
     flag: 'https://restcountries.eu/data/lao.svg',
   }, {
     name: 'Latvia',
-    alpha3Code: 'LVA',
+    id: 'LVA',
     capital: 'Riga',
     region: 'Europe',
     subregion: 'Northern Europe',
@@ -1210,7 +1210,7 @@ export default [
     flag: 'https://restcountries.eu/data/lva.svg',
   }, {
     name: 'Lebanon',
-    alpha3Code: 'LBN',
+    id: 'LBN',
     capital: 'Beirut',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -1223,7 +1223,7 @@ export default [
     flag: 'https://restcountries.eu/data/lbn.svg',
   }, {
     name: 'Lesotho',
-    alpha3Code: 'LSO',
+    id: 'LSO',
     capital: 'Maseru',
     region: 'Africa',
     subregion: 'Southern Africa',
@@ -1236,7 +1236,7 @@ export default [
     flag: 'https://restcountries.eu/data/lso.svg',
   }, {
     name: 'Liberia',
-    alpha3Code: 'LBR',
+    id: 'LBR',
     capital: 'Monrovia',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -1249,7 +1249,7 @@ export default [
     flag: 'https://restcountries.eu/data/lbr.svg',
   }, {
     name: 'Libya',
-    alpha3Code: 'LBY',
+    id: 'LBY',
     capital: 'Tripoli',
     region: 'Africa',
     subregion: 'Northern Africa',
@@ -1262,7 +1262,7 @@ export default [
     flag: 'https://restcountries.eu/data/lby.svg',
   }, {
     name: 'Liechtenstein',
-    alpha3Code: 'LIE',
+    id: 'LIE',
     capital: 'Vaduz',
     region: 'Europe',
     subregion: 'Western Europe',
@@ -1275,7 +1275,7 @@ export default [
     flag: 'https://restcountries.eu/data/lie.svg',
   }, {
     name: 'Lithuania',
-    alpha3Code: 'LTU',
+    id: 'LTU',
     capital: 'Vilnius',
     region: 'Europe',
     subregion: 'Northern Europe',
@@ -1288,7 +1288,7 @@ export default [
     flag: 'https://restcountries.eu/data/ltu.svg',
   }, {
     name: 'Luxembourg',
-    alpha3Code: 'LUX',
+    id: 'LUX',
     capital: 'Luxembourg',
     region: 'Europe',
     subregion: 'Western Europe',
@@ -1301,7 +1301,7 @@ export default [
     flag: 'https://restcountries.eu/data/lux.svg',
   }, {
     name: 'Macedonia (the former Yugoslav Republic of)',
-    alpha3Code: 'MKD',
+    id: 'MKD',
     capital: 'Skopje',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -1314,7 +1314,7 @@ export default [
     flag: 'https://restcountries.eu/data/mkd.svg',
   }, {
     name: 'Madagascar',
-    alpha3Code: 'MDG',
+    id: 'MDG',
     capital: 'Antananarivo',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -1327,7 +1327,7 @@ export default [
     flag: 'https://restcountries.eu/data/mdg.svg',
   }, {
     name: 'Malawi',
-    alpha3Code: 'MWI',
+    id: 'MWI',
     capital: 'Lilongwe',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -1340,7 +1340,7 @@ export default [
     flag: 'https://restcountries.eu/data/mwi.svg',
   }, {
     name: 'Malaysia',
-    alpha3Code: 'MYS',
+    id: 'MYS',
     capital: 'Kuala Lumpur',
     region: 'Asia',
     subregion: 'South-Eastern Asia',
@@ -1353,7 +1353,7 @@ export default [
     flag: 'https://restcountries.eu/data/mys.svg',
   }, {
     name: 'Maldives',
-    alpha3Code: 'MDV',
+    id: 'MDV',
     capital: 'Malé',
     region: 'Asia',
     subregion: 'Southern Asia',
@@ -1366,7 +1366,7 @@ export default [
     flag: 'https://restcountries.eu/data/mdv.svg',
   }, {
     name: 'Mali',
-    alpha3Code: 'MLI',
+    id: 'MLI',
     capital: 'Bamako',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -1379,7 +1379,7 @@ export default [
     flag: 'https://restcountries.eu/data/mli.svg',
   }, {
     name: 'Malta',
-    alpha3Code: 'MLT',
+    id: 'MLT',
     capital: 'Valletta',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -1392,7 +1392,7 @@ export default [
     flag: 'https://restcountries.eu/data/mlt.svg',
   }, {
     name: 'Marshall Islands',
-    alpha3Code: 'MHL',
+    id: 'MHL',
     capital: 'Majuro',
     region: 'Oceania',
     subregion: 'Micronesia',
@@ -1405,7 +1405,7 @@ export default [
     flag: 'https://restcountries.eu/data/mhl.svg',
   }, {
     name: 'Mauritania',
-    alpha3Code: 'MRT',
+    id: 'MRT',
     capital: 'Nouakchott',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -1418,7 +1418,7 @@ export default [
     flag: 'https://restcountries.eu/data/mrt.svg',
   }, {
     name: 'Mauritius',
-    alpha3Code: 'MUS',
+    id: 'MUS',
     capital: 'Port Louis',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -1431,7 +1431,7 @@ export default [
     flag: 'https://restcountries.eu/data/mus.svg',
   }, {
     name: 'Mexico',
-    alpha3Code: 'MEX',
+    id: 'MEX',
     capital: 'Mexico City',
     region: 'Americas',
     subregion: 'Central America',
@@ -1444,7 +1444,7 @@ export default [
     flag: 'https://restcountries.eu/data/mex.svg',
   }, {
     name: 'Micronesia (Federated States of)',
-    alpha3Code: 'FSM',
+    id: 'FSM',
     capital: 'Palikir',
     region: 'Oceania',
     subregion: 'Micronesia',
@@ -1457,7 +1457,7 @@ export default [
     flag: 'https://restcountries.eu/data/fsm.svg',
   }, {
     name: 'Moldova (Republic of)',
-    alpha3Code: 'MDA',
+    id: 'MDA',
     capital: 'Chișinău',
     region: 'Europe',
     subregion: 'Eastern Europe',
@@ -1470,7 +1470,7 @@ export default [
     flag: 'https://restcountries.eu/data/mda.svg',
   }, {
     name: 'Monaco',
-    alpha3Code: 'MCO',
+    id: 'MCO',
     capital: 'Monaco',
     region: 'Europe',
     subregion: 'Western Europe',
@@ -1483,7 +1483,7 @@ export default [
     flag: 'https://restcountries.eu/data/mco.svg',
   }, {
     name: 'Mongolia',
-    alpha3Code: 'MNG',
+    id: 'MNG',
     capital: 'Ulan Bator',
     region: 'Asia',
     subregion: 'Eastern Asia',
@@ -1496,7 +1496,7 @@ export default [
     flag: 'https://restcountries.eu/data/mng.svg',
   }, {
     name: 'Montenegro',
-    alpha3Code: 'MNE',
+    id: 'MNE',
     capital: 'Podgorica',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -1509,7 +1509,7 @@ export default [
     flag: 'https://restcountries.eu/data/mne.svg',
   }, {
     name: 'Morocco',
-    alpha3Code: 'MAR',
+    id: 'MAR',
     capital: 'Rabat',
     region: 'Africa',
     subregion: 'Northern Africa',
@@ -1522,7 +1522,7 @@ export default [
     flag: 'https://restcountries.eu/data/mar.svg',
   }, {
     name: 'Mozambique',
-    alpha3Code: 'MOZ',
+    id: 'MOZ',
     capital: 'Maputo',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -1535,7 +1535,7 @@ export default [
     flag: 'https://restcountries.eu/data/moz.svg',
   }, {
     name: 'Myanmar',
-    alpha3Code: 'MMR',
+    id: 'MMR',
     capital: 'Naypyidaw',
     region: 'Asia',
     subregion: 'South-Eastern Asia',
@@ -1548,7 +1548,7 @@ export default [
     flag: 'https://restcountries.eu/data/mmr.svg',
   }, {
     name: 'Namibia',
-    alpha3Code: 'NAM',
+    id: 'NAM',
     capital: 'Windhoek',
     region: 'Africa',
     subregion: 'Southern Africa',
@@ -1561,7 +1561,7 @@ export default [
     flag: 'https://restcountries.eu/data/nam.svg',
   }, {
     name: 'Nauru',
-    alpha3Code: 'NRU',
+    id: 'NRU',
     capital: 'Yaren',
     region: 'Oceania',
     subregion: 'Micronesia',
@@ -1574,7 +1574,7 @@ export default [
     flag: 'https://restcountries.eu/data/nru.svg',
   }, {
     name: 'Nepal',
-    alpha3Code: 'NPL',
+    id: 'NPL',
     capital: 'Kathmandu',
     region: 'Asia',
     subregion: 'Southern Asia',
@@ -1587,7 +1587,7 @@ export default [
     flag: 'https://restcountries.eu/data/npl.svg',
   }, {
     name: 'Netherlands',
-    alpha3Code: 'NLD',
+    id: 'NLD',
     capital: 'Amsterdam',
     region: 'Europe',
     subregion: 'Western Europe',
@@ -1600,7 +1600,7 @@ export default [
     flag: 'https://restcountries.eu/data/nld.svg',
   }, {
     name: 'New Zealand',
-    alpha3Code: 'NZL',
+    id: 'NZL',
     capital: 'Wellington',
     region: 'Oceania',
     subregion: 'Australia and New Zealand',
@@ -1613,7 +1613,7 @@ export default [
     flag: 'https://restcountries.eu/data/nzl.svg',
   }, {
     name: 'Nicaragua',
-    alpha3Code: 'NIC',
+    id: 'NIC',
     capital: 'Managua',
     region: 'Americas',
     subregion: 'Central America',
@@ -1626,7 +1626,7 @@ export default [
     flag: 'https://restcountries.eu/data/nic.svg',
   }, {
     name: 'Niger',
-    alpha3Code: 'NER',
+    id: 'NER',
     capital: 'Niamey',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -1639,7 +1639,7 @@ export default [
     flag: 'https://restcountries.eu/data/ner.svg',
   }, {
     name: 'Nigeria',
-    alpha3Code: 'NGA',
+    id: 'NGA',
     capital: 'Abuja',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -1652,7 +1652,7 @@ export default [
     flag: 'https://restcountries.eu/data/nga.svg',
   }, {
     name: "Korea (Democratic People's Republic of)",
-    alpha3Code: 'PRK',
+    id: 'PRK',
     capital: 'Pyongyang',
     region: 'Asia',
     subregion: 'Eastern Asia',
@@ -1665,7 +1665,7 @@ export default [
     flag: 'https://restcountries.eu/data/prk.svg',
   }, {
     name: 'Norway',
-    alpha3Code: 'NOR',
+    id: 'NOR',
     capital: 'Oslo',
     region: 'Europe',
     subregion: 'Northern Europe',
@@ -1678,7 +1678,7 @@ export default [
     flag: 'https://restcountries.eu/data/nor.svg',
   }, {
     name: 'Oman',
-    alpha3Code: 'OMN',
+    id: 'OMN',
     capital: 'Muscat',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -1691,7 +1691,7 @@ export default [
     flag: 'https://restcountries.eu/data/omn.svg',
   }, {
     name: 'Pakistan',
-    alpha3Code: 'PAK',
+    id: 'PAK',
     capital: 'Islamabad',
     region: 'Asia',
     subregion: 'Southern Asia',
@@ -1704,7 +1704,7 @@ export default [
     flag: 'https://restcountries.eu/data/pak.svg',
   }, {
     name: 'Palau',
-    alpha3Code: 'PLW',
+    id: 'PLW',
     capital: 'Ngerulmud',
     region: 'Oceania',
     subregion: 'Micronesia',
@@ -1717,7 +1717,7 @@ export default [
     flag: 'https://restcountries.eu/data/plw.svg',
   }, {
     name: 'Palestine, State of',
-    alpha3Code: 'PSE',
+    id: 'PSE',
     capital: 'Ramallah',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -1730,7 +1730,7 @@ export default [
     flag: 'https://restcountries.eu/data/pse.svg',
   }, {
     name: 'Panama',
-    alpha3Code: 'PAN',
+    id: 'PAN',
     capital: 'Panama City',
     region: 'Americas',
     subregion: 'Central America',
@@ -1743,7 +1743,7 @@ export default [
     flag: 'https://restcountries.eu/data/pan.svg',
   }, {
     name: 'Papua New Guinea',
-    alpha3Code: 'PNG',
+    id: 'PNG',
     capital: 'Port Moresby',
     region: 'Oceania',
     subregion: 'Melanesia',
@@ -1756,7 +1756,7 @@ export default [
     flag: 'https://restcountries.eu/data/png.svg',
   }, {
     name: 'Paraguay',
-    alpha3Code: 'PRY',
+    id: 'PRY',
     capital: 'Asunción',
     region: 'Americas',
     subregion: 'South America',
@@ -1769,7 +1769,7 @@ export default [
     flag: 'https://restcountries.eu/data/pry.svg',
   }, {
     name: 'Peru',
-    alpha3Code: 'PER',
+    id: 'PER',
     capital: 'Lima',
     region: 'Americas',
     subregion: 'South America',
@@ -1782,7 +1782,7 @@ export default [
     flag: 'https://restcountries.eu/data/per.svg',
   }, {
     name: 'Philippines',
-    alpha3Code: 'PHL',
+    id: 'PHL',
     capital: 'Manila',
     region: 'Asia',
     subregion: 'South-Eastern Asia',
@@ -1795,7 +1795,7 @@ export default [
     flag: 'https://restcountries.eu/data/phl.svg',
   }, {
     name: 'Poland',
-    alpha3Code: 'POL',
+    id: 'POL',
     capital: 'Warsaw',
     region: 'Europe',
     subregion: 'Eastern Europe',
@@ -1808,7 +1808,7 @@ export default [
     flag: 'https://restcountries.eu/data/pol.svg',
   }, {
     name: 'Portugal',
-    alpha3Code: 'PRT',
+    id: 'PRT',
     capital: 'Lisbon',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -1821,7 +1821,7 @@ export default [
     flag: 'https://restcountries.eu/data/prt.svg',
   }, {
     name: 'Qatar',
-    alpha3Code: 'QAT',
+    id: 'QAT',
     capital: 'Doha',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -1834,7 +1834,7 @@ export default [
     flag: 'https://restcountries.eu/data/qat.svg',
   }, {
     name: 'Romania',
-    alpha3Code: 'ROU',
+    id: 'ROU',
     capital: 'Bucharest',
     region: 'Europe',
     subregion: 'Eastern Europe',
@@ -1847,7 +1847,7 @@ export default [
     flag: 'https://restcountries.eu/data/rou.svg',
   }, {
     name: 'Russian Federation',
-    alpha3Code: 'RUS',
+    id: 'RUS',
     capital: 'Moscow',
     region: 'Europe',
     subregion: 'Eastern Europe',
@@ -1860,7 +1860,7 @@ export default [
     flag: 'https://restcountries.eu/data/rus.svg',
   }, {
     name: 'Rwanda',
-    alpha3Code: 'RWA',
+    id: 'RWA',
     capital: 'Kigali',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -1873,7 +1873,7 @@ export default [
     flag: 'https://restcountries.eu/data/rwa.svg',
   }, {
     name: 'Saint Kitts and Nevis',
-    alpha3Code: 'KNA',
+    id: 'KNA',
     capital: 'Basseterre',
     region: 'Americas',
     subregion: 'Caribbean',
@@ -1886,7 +1886,7 @@ export default [
     flag: 'https://restcountries.eu/data/kna.svg',
   }, {
     name: 'Saint Lucia',
-    alpha3Code: 'LCA',
+    id: 'LCA',
     capital: 'Castries',
     region: 'Americas',
     subregion: 'Caribbean',
@@ -1899,7 +1899,7 @@ export default [
     flag: 'https://restcountries.eu/data/lca.svg',
   }, {
     name: 'Saint Vincent and the Grenadines',
-    alpha3Code: 'VCT',
+    id: 'VCT',
     capital: 'Kingstown',
     region: 'Americas',
     subregion: 'Caribbean',
@@ -1912,7 +1912,7 @@ export default [
     flag: 'https://restcountries.eu/data/vct.svg',
   }, {
     name: 'Samoa',
-    alpha3Code: 'WSM',
+    id: 'WSM',
     capital: 'Apia',
     region: 'Oceania',
     subregion: 'Polynesia',
@@ -1925,7 +1925,7 @@ export default [
     flag: 'https://restcountries.eu/data/wsm.svg',
   }, {
     name: 'San Marino',
-    alpha3Code: 'SMR',
+    id: 'SMR',
     capital: 'City of San Marino',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -1938,7 +1938,7 @@ export default [
     flag: 'https://restcountries.eu/data/smr.svg',
   }, {
     name: 'Sao Tome and Principe',
-    alpha3Code: 'STP',
+    id: 'STP',
     capital: 'São Tomé',
     region: 'Africa',
     subregion: 'Middle Africa',
@@ -1951,7 +1951,7 @@ export default [
     flag: 'https://restcountries.eu/data/stp.svg',
   }, {
     name: 'Saudi Arabia',
-    alpha3Code: 'SAU',
+    id: 'SAU',
     capital: 'Riyadh',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -1964,7 +1964,7 @@ export default [
     flag: 'https://restcountries.eu/data/sau.svg',
   }, {
     name: 'Senegal',
-    alpha3Code: 'SEN',
+    id: 'SEN',
     capital: 'Dakar',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -1977,7 +1977,7 @@ export default [
     flag: 'https://restcountries.eu/data/sen.svg',
   }, {
     name: 'Serbia',
-    alpha3Code: 'SRB',
+    id: 'SRB',
     capital: 'Belgrade',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -1990,7 +1990,7 @@ export default [
     flag: 'https://restcountries.eu/data/srb.svg',
   }, {
     name: 'Seychelles',
-    alpha3Code: 'SYC',
+    id: 'SYC',
     capital: 'Victoria',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -2003,7 +2003,7 @@ export default [
     flag: 'https://restcountries.eu/data/syc.svg',
   }, {
     name: 'Sierra Leone',
-    alpha3Code: 'SLE',
+    id: 'SLE',
     capital: 'Freetown',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -2016,7 +2016,7 @@ export default [
     flag: 'https://restcountries.eu/data/sle.svg',
   }, {
     name: 'Singapore',
-    alpha3Code: 'SGP',
+    id: 'SGP',
     capital: 'Singapore',
     region: 'Asia',
     subregion: 'South-Eastern Asia',
@@ -2029,7 +2029,7 @@ export default [
     flag: 'https://restcountries.eu/data/sgp.svg',
   }, {
     name: 'Slovakia',
-    alpha3Code: 'SVK',
+    id: 'SVK',
     capital: 'Bratislava',
     region: 'Europe',
     subregion: 'Eastern Europe',
@@ -2042,7 +2042,7 @@ export default [
     flag: 'https://restcountries.eu/data/svk.svg',
   }, {
     name: 'Slovenia',
-    alpha3Code: 'SVN',
+    id: 'SVN',
     capital: 'Ljubljana',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -2055,7 +2055,7 @@ export default [
     flag: 'https://restcountries.eu/data/svn.svg',
   }, {
     name: 'Solomon Islands',
-    alpha3Code: 'SLB',
+    id: 'SLB',
     capital: 'Honiara',
     region: 'Oceania',
     subregion: 'Melanesia',
@@ -2068,7 +2068,7 @@ export default [
     flag: 'https://restcountries.eu/data/slb.svg',
   }, {
     name: 'Somalia',
-    alpha3Code: 'SOM',
+    id: 'SOM',
     capital: 'Mogadishu',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -2081,7 +2081,7 @@ export default [
     flag: 'https://restcountries.eu/data/som.svg',
   }, {
     name: 'South Africa',
-    alpha3Code: 'ZAF',
+    id: 'ZAF',
     capital: 'Pretoria',
     region: 'Africa',
     subregion: 'Southern Africa',
@@ -2094,7 +2094,7 @@ export default [
     flag: 'https://restcountries.eu/data/zaf.svg',
   }, {
     name: 'Korea (Republic of)',
-    alpha3Code: 'KOR',
+    id: 'KOR',
     capital: 'Seoul',
     region: 'Asia',
     subregion: 'Eastern Asia',
@@ -2107,7 +2107,7 @@ export default [
     flag: 'https://restcountries.eu/data/kor.svg',
   }, {
     name: 'South Sudan',
-    alpha3Code: 'SSD',
+    id: 'SSD',
     capital: 'Juba',
     region: 'Africa',
     subregion: 'Middle Africa',
@@ -2120,7 +2120,7 @@ export default [
     flag: 'https://restcountries.eu/data/ssd.svg',
   }, {
     name: 'Spain',
-    alpha3Code: 'ESP',
+    id: 'ESP',
     capital: 'Madrid',
     region: 'Europe',
     subregion: 'Southern Europe',
@@ -2133,7 +2133,7 @@ export default [
     flag: 'https://restcountries.eu/data/esp.svg',
   }, {
     name: 'Sri Lanka',
-    alpha3Code: 'LKA',
+    id: 'LKA',
     capital: 'Colombo',
     region: 'Asia',
     subregion: 'Southern Asia',
@@ -2146,7 +2146,7 @@ export default [
     flag: 'https://restcountries.eu/data/lka.svg',
   }, {
     name: 'Sudan',
-    alpha3Code: 'SDN',
+    id: 'SDN',
     capital: 'Khartoum',
     region: 'Africa',
     subregion: 'Northern Africa',
@@ -2159,7 +2159,7 @@ export default [
     flag: 'https://restcountries.eu/data/sdn.svg',
   }, {
     name: 'Suriname',
-    alpha3Code: 'SUR',
+    id: 'SUR',
     capital: 'Paramaribo',
     region: 'Americas',
     subregion: 'South America',
@@ -2172,7 +2172,7 @@ export default [
     flag: 'https://restcountries.eu/data/sur.svg',
   }, {
     name: 'Swaziland',
-    alpha3Code: 'SWZ',
+    id: 'SWZ',
     capital: 'Lobamba',
     region: 'Africa',
     subregion: 'Southern Africa',
@@ -2185,7 +2185,7 @@ export default [
     flag: 'https://restcountries.eu/data/swz.svg',
   }, {
     name: 'Sweden',
-    alpha3Code: 'SWE',
+    id: 'SWE',
     capital: 'Stockholm',
     region: 'Europe',
     subregion: 'Northern Europe',
@@ -2198,7 +2198,7 @@ export default [
     flag: 'https://restcountries.eu/data/swe.svg',
   }, {
     name: 'Switzerland',
-    alpha3Code: 'CHE',
+    id: 'CHE',
     capital: 'Bern',
     region: 'Europe',
     subregion: 'Western Europe',
@@ -2211,7 +2211,7 @@ export default [
     flag: 'https://restcountries.eu/data/che.svg',
   }, {
     name: 'Syrian Arab Republic',
-    alpha3Code: 'SYR',
+    id: 'SYR',
     capital: 'Damascus',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -2224,7 +2224,7 @@ export default [
     flag: 'https://restcountries.eu/data/syr.svg',
   }, {
     name: 'Tajikistan',
-    alpha3Code: 'TJK',
+    id: 'TJK',
     capital: 'Dushanbe',
     region: 'Asia',
     subregion: 'Central Asia',
@@ -2237,7 +2237,7 @@ export default [
     flag: 'https://restcountries.eu/data/tjk.svg',
   }, {
     name: 'Tanzania, United Republic of',
-    alpha3Code: 'TZA',
+    id: 'TZA',
     capital: 'Dodoma',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -2250,7 +2250,7 @@ export default [
     flag: 'https://restcountries.eu/data/tza.svg',
   }, {
     name: 'Thailand',
-    alpha3Code: 'THA',
+    id: 'THA',
     capital: 'Bangkok',
     region: 'Asia',
     subregion: 'South-Eastern Asia',
@@ -2263,7 +2263,7 @@ export default [
     flag: 'https://restcountries.eu/data/tha.svg',
   }, {
     name: 'Timor-Leste',
-    alpha3Code: 'TLS',
+    id: 'TLS',
     capital: 'Dili',
     region: 'Asia',
     subregion: 'South-Eastern Asia',
@@ -2276,7 +2276,7 @@ export default [
     flag: 'https://restcountries.eu/data/tls.svg',
   }, {
     name: 'Togo',
-    alpha3Code: 'TGO',
+    id: 'TGO',
     capital: 'Lomé',
     region: 'Africa',
     subregion: 'Western Africa',
@@ -2289,7 +2289,7 @@ export default [
     flag: 'https://restcountries.eu/data/tgo.svg',
   }, {
     name: 'Tonga',
-    alpha3Code: 'TON',
+    id: 'TON',
     capital: "Nuku'alofa",
     region: 'Oceania',
     subregion: 'Polynesia',
@@ -2302,7 +2302,7 @@ export default [
     flag: 'https://restcountries.eu/data/ton.svg',
   }, {
     name: 'Trinidad and Tobago',
-    alpha3Code: 'TTO',
+    id: 'TTO',
     capital: 'Port of Spain',
     region: 'Americas',
     subregion: 'Caribbean',
@@ -2315,7 +2315,7 @@ export default [
     flag: 'https://restcountries.eu/data/tto.svg',
   }, {
     name: 'Tunisia',
-    alpha3Code: 'TUN',
+    id: 'TUN',
     capital: 'Tunis',
     region: 'Africa',
     subregion: 'Northern Africa',
@@ -2328,7 +2328,7 @@ export default [
     flag: 'https://restcountries.eu/data/tun.svg',
   }, {
     name: 'Turkey',
-    alpha3Code: 'TUR',
+    id: 'TUR',
     capital: 'Ankara',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -2341,7 +2341,7 @@ export default [
     flag: 'https://restcountries.eu/data/tur.svg',
   }, {
     name: 'Turkmenistan',
-    alpha3Code: 'TKM',
+    id: 'TKM',
     capital: 'Ashgabat',
     region: 'Asia',
     subregion: 'Central Asia',
@@ -2354,7 +2354,7 @@ export default [
     flag: 'https://restcountries.eu/data/tkm.svg',
   }, {
     name: 'Tuvalu',
-    alpha3Code: 'TUV',
+    id: 'TUV',
     capital: 'Funafuti',
     region: 'Oceania',
     subregion: 'Polynesia',
@@ -2367,7 +2367,7 @@ export default [
     flag: 'https://restcountries.eu/data/tuv.svg',
   }, {
     name: 'Uganda',
-    alpha3Code: 'UGA',
+    id: 'UGA',
     capital: 'Kampala',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -2380,7 +2380,7 @@ export default [
     flag: 'https://restcountries.eu/data/uga.svg',
   }, {
     name: 'Ukraine',
-    alpha3Code: 'UKR',
+    id: 'UKR',
     capital: 'Kiev',
     region: 'Europe',
     subregion: 'Eastern Europe',
@@ -2393,7 +2393,7 @@ export default [
     flag: 'https://restcountries.eu/data/ukr.svg',
   }, {
     name: 'United Arab Emirates',
-    alpha3Code: 'ARE',
+    id: 'ARE',
     capital: 'Abu Dhabi',
     region: 'Asia',
     subregion: 'Western Asia',
@@ -2406,7 +2406,7 @@ export default [
     flag: 'https://restcountries.eu/data/are.svg',
   }, {
     name: 'United Kingdom of Great Britain and Northern Ireland',
-    alpha3Code: 'GBR',
+    id: 'GBR',
     capital: 'London',
     region: 'Europe',
     subregion: 'Northern Europe',
@@ -2419,7 +2419,7 @@ export default [
     flag: 'https://restcountries.eu/data/gbr.svg',
   }, {
     name: 'United States of America',
-    alpha3Code: 'USA',
+    id: 'USA',
     capital: 'Washington, D.C.',
     region: 'Americas',
     subregion: 'Northern America',
@@ -2432,7 +2432,7 @@ export default [
     flag: 'https://restcountries.eu/data/usa.svg',
   }, {
     name: 'Uruguay',
-    alpha3Code: 'URY',
+    id: 'URY',
     capital: 'Montevideo',
     region: 'Americas',
     subregion: 'South America',
@@ -2445,7 +2445,7 @@ export default [
     flag: 'https://restcountries.eu/data/ury.svg',
   }, {
     name: 'Uzbekistan',
-    alpha3Code: 'UZB',
+    id: 'UZB',
     capital: 'Tashkent',
     region: 'Asia',
     subregion: 'Central Asia',
@@ -2458,7 +2458,7 @@ export default [
     flag: 'https://restcountries.eu/data/uzb.svg',
   }, {
     name: 'Vanuatu',
-    alpha3Code: 'VUT',
+    id: 'VUT',
     capital: 'Port Vila',
     region: 'Oceania',
     subregion: 'Melanesia',
@@ -2471,7 +2471,7 @@ export default [
     flag: 'https://restcountries.eu/data/vut.svg',
   }, {
     name: 'Venezuela (Bolivarian Republic of)',
-    alpha3Code: 'VEN',
+    id: 'VEN',
     capital: 'Caracas',
     region: 'Americas',
     subregion: 'South America',
@@ -2484,7 +2484,7 @@ export default [
     flag: 'https://restcountries.eu/data/ven.svg',
   }, {
     name: 'Viet Nam',
-    alpha3Code: 'VNM',
+    id: 'VNM',
     capital: 'Hanoi',
     region: 'Asia',
     subregion: 'South-Eastern Asia',
@@ -2497,7 +2497,7 @@ export default [
     flag: 'https://restcountries.eu/data/vnm.svg',
   }, {
     name: 'Yemen',
-    alpha3Code: 'YEM',
+    id: 'YEM',
     capital: "Sana'a",
     region: 'Asia',
     subregion: 'Western Asia',
@@ -2510,7 +2510,7 @@ export default [
     flag: 'https://restcountries.eu/data/yem.svg',
   }, {
     name: 'Zambia',
-    alpha3Code: 'ZMB',
+    id: 'ZMB',
     capital: 'Lusaka',
     region: 'Africa',
     subregion: 'Eastern Africa',
@@ -2523,7 +2523,7 @@ export default [
     flag: 'https://restcountries.eu/data/zmb.svg',
   }, {
     name: 'Zimbabwe',
-    alpha3Code: 'ZWE',
+    id: 'ZWE',
     capital: 'Harare',
     region: 'Africa',
     subregion: 'Eastern Africa',
