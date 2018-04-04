@@ -1,3 +1,4 @@
 .Options {
   width: 600px;
+  flex-wrap: wrap;
 }

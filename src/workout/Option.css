@@ -1,3 +1,7 @@
+.Option {
+  margin: 5px;
+}
+
 .Option.correct button {
   background-color: #b1dab1 !important;
 }
