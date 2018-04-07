@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import EndScreen from '../workout/EndScreen';
-import StartScreen from '../workout/StartScreen';
+import EndScreen from './EndScreen';
+import StartScreen from './StartScreen';
 import SubjectData from '../workout/subjectData';
 import Workout from '../workout/Workout';
 

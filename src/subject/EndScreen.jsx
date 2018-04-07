@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import RaisedButton from 'material-ui/RaisedButton';
-import Score from './Score';
+import Score from '../workout/Score';
 import Screen from './Screen';
 
 class EndScreen extends React.Component {
