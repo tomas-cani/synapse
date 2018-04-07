@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 import RaisedButton from 'material-ui/RaisedButton';
 import Slider from 'material-ui/Slider';
-import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton';
 
+import MaxExercices from './MaxExercices';
 import Screen from './Screen';
 
 class StartScreen extends React.Component {
@@ -29,17 +29,10 @@ class StartScreen extends React.Component {
         <h2>Configure workout</h2>
         <h3># Exercises</h3>
 
-        <RadioButtonGroup
-          className=""
-          name="maxExercises"
-          defaultSelected="not_light"
+        <MaxExercices
           onChange={this.handleInput}
-          valueSelected={this.props.maxExercises}
-        >
-          <RadioButton value={5} label="5" className="radio" />
-          <RadioButton value={10} label="10" className="radio" />
-          <RadioButton value={20} label="20" className="radio" />
-        </RadioButtonGroup>
+          maxExercises={this.props.maxExercises}
+        />
         <h3>Difficulty Level: {this.props.difficulty}</h3>
         <Slider
           className="slider"
