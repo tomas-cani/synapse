@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import RaisedButton from 'material-ui/RaisedButton';
-import Slider from 'material-ui/Slider';
 
 import MaxExercices from './MaxExercices';
+import DifficultyLevel from './DifficultyLevel';
 import Screen from './Screen';
 
 class StartScreen extends React.Component {
@@ -33,16 +33,11 @@ class StartScreen extends React.Component {
           onChange={this.handleInput}
           maxExercises={this.props.maxExercises}
         />
-        <h3>Difficulty Level: {this.props.difficulty}</h3>
-        <Slider
-          className="slider"
-          min={1}
-          max={5}
-          step={1}
-          value={this.props.difficulty}
+        <DifficultyLevel
+          difficulty={this.props.difficulty}
+          difficultyDescription={this.props.difficultyDescription}
           onChange={this.handleDifficultyChange}
         />
-        <p>{this.props.difficultyDescription}</p>
         <RaisedButton label="Start workout" onClick={this.props.onStart} />
       </Screen>
     );
