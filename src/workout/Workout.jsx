@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import LinearProgress from 'material-ui/LinearProgress';
+
 import Exercise from '../workout/Exercise';
 import Score from '../workout/Score';
 
@@ -71,6 +73,11 @@ class Workout extends React.Component {
           />
         </Exercise>
         <Score attempts={this.state.attempts} correctAnswers={this.state.correctAnswers} />
+        <LinearProgress
+          mode="determinate"
+          max={this.props.maxExercises}
+          value={this.state.attempts}
+        />
       </div>
     ) : '';
   }
