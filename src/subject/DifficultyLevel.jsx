@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Slider from 'material-ui/Slider';
 
-const MaxExercices = props => [
+const DifficultyLevel = props => [
   <h3>Difficulty Level: {props.difficulty}</h3>,
   <Slider
     className="slider"
@@ -16,10 +16,10 @@ const MaxExercices = props => [
   <p>{props.difficultyDescription}</p>,
 ];
 
-MaxExercices.propTypes = {
+DifficultyLevel.propTypes = {
   difficulty: PropTypes.number.isRequired,
   difficultyDescription: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
 
-export default MaxExercices;
+export default DifficultyLevel;
