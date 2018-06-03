@@ -5,6 +5,7 @@
   },
   "rules": {
     "no-mixed-operators": 0,
+    "react/jsx-filename-extension": false,
     "jsx-a11y/anchor-is-valid": [ "error", {
       "components": [ "Link" ],
       "specialLink": [ "to" ]
