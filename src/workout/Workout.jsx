@@ -6,6 +6,11 @@ import LinearProgress from 'material-ui/LinearProgress';
 import Exercise from '../workout/Exercise';
 import Score from '../workout/Score';
 
+import correctSound from '../sounds/correct.mp3';
+import incorrectSound from '../sounds/incorrect.mp3';
+const correctAudio = new Audio(correctSound);
+const incorrectAudio = new Audio(incorrectSound);
+
 class Workout extends React.Component {
   constructor() {
     super();
@@ -27,6 +32,14 @@ class Workout extends React.Component {
     this.setState({
       selectedOptionId: id,
     });
+
+    const correctAnswer = id === this.state.correctOption.id;
+    if (correctAnswer) {
+      correctAudio.play();
+    } else {
+      incorrectAudio.play();
+    }
+
     setTimeout(() => {
       this.updateScore(id);
       this.nextQuestion();
@@ -48,9 +61,10 @@ class Workout extends React.Component {
   }
 
   updateScore(id) {
+    const correctAnswer = id === this.state.correctOption.id;
     this.setState({
       attempts: this.state.attempts + 1,
-      correctAnswers: id === this.state.correctOption.id ? this.state.correctAnswers + 1 :
+      correctAnswers: correctAnswer ? this.state.correctAnswers + 1 :
         this.state.correctAnswers,
     });
   }
