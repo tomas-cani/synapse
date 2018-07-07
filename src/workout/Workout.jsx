@@ -5,6 +5,8 @@ import Exercise from '../workout/Exercise';
 import Progress from './Progress';
 import Score from '../workout/Score';
 
+import './Workout.css';
+
 import correctSound from '../sounds/correct.mp3';
 import incorrectSound from '../sounds/incorrect.mp3';
 
@@ -72,7 +74,7 @@ class Workout extends React.Component {
   render() {
     const Question = this.props.questionComponent;
     return this.state.correctOption ? (
-      <div className="game-board container vertical">
+      <div className="container vertical">
         <Exercise
           options={this.state.options}
           correctOption={this.state.correctOption}
@@ -80,11 +82,13 @@ class Workout extends React.Component {
           property={this.state.property}
           selectedOptionId={this.state.selectedOptionId}
         >
-          <Question
-            data={this.state.correctOption}
-            property={this.state.property}
-            selectedOptionId={this.state.selectedOptionId}
-          />
+          <div className="question-container">
+            <Question
+              data={this.state.correctOption}
+              property={this.state.property}
+              selectedOptionId={this.state.selectedOptionId}
+            />
+          </div>
         </Exercise>
         <Score attempts={this.state.attempts} correctAnswers={this.state.correctAnswers} />
         <Progress

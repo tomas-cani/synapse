@@ -29,7 +29,7 @@ class Options extends Component {
       />
     ));
     return (
-      <div className="Options container">
+      <div className="Options">
         {options}
       </div>
     );

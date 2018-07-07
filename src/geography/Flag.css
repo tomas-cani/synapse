@@ -1,3 +1,5 @@
 .Flag {
-  width: 350px;
+  width: 80%;
+  max-width: 350px;
+  max-height: 100%;
 }

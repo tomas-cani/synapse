@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 import Options from './Options';
 
-import './Exercise.css';
-
 const Exercise = props => (
   <div className="Exercise container vertical">
     {props.children}
