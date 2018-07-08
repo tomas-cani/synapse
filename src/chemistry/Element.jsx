@@ -19,7 +19,6 @@ class Element extends Component {
         <p className="Element-number">{this.resolveHidden('number', 'number')}</p>
         <h1 className="Element-symbol">{this.resolveHidden('symbol', 'id')}</h1>
         <p className="Element-name">{this.resolveHidden('name', 'name')}</p>
-        <p className="Element-mass">{this.props.data.mass}</p>
       </Paper>
     );
   }

@@ -1,16 +1,19 @@
 .Element {
   width: 250px;
   height: 250px;
+  margin: 10px;
   padding: 10px;
+  justify-content: space-around;
   flex-direction: column;
 }
 
-.Element p {
+.Element-name {
   margin: 0;
   font-size: 1.5rem;
 }
 
 .Element-number {
+  margin: 0;
   align-self: flex-start;
   font-size: 2rem;
 }
