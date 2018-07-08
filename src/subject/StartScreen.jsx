@@ -38,7 +38,7 @@ class StartScreen extends React.Component {
           difficultyDescription={this.props.difficultyDescription}
           onChange={this.handleDifficultyChange}
         />
-        <RaisedButton label="Start workout" onClick={this.props.onStart} />
+        <RaisedButton label="Start workout" primary onClick={this.props.onStart} />
       </Screen>
     );
   }
