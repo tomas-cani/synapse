@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
+import muiTheme from './muiTheme';
+
 import Sidebar from './sidebar/Sidebar';
 import Chemistry from './chemistry/Chemistry';
 import Geography from './geography/Geography';
@@ -11,7 +13,7 @@ import './material-ui.css';
 
 const App = () => (
   <BrowserRouter>
-    <MuiThemeProvider>
+    <MuiThemeProvider muiTheme={muiTheme}>
       <div className="App container">
         <Sidebar />
         <Switch>
