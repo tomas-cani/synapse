@@ -29,11 +29,13 @@ const difficultyLevels = [
   },
 ];
 
+const questions = [Flag];
+
 const Geography = () => (
   <Subject
     difficultyLevels={difficultyLevels}
     name="Geography"
-    questionComponent={Flag}
+    questions={questions}
     subjectData={countries}
     subjectDataProperties={['name']}
   />

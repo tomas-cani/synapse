@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Exercise from '../workout/Exercise';
 import Progress from './Progress';
 import Score from '../workout/Score';
+import { getRandomElement } from '../shared/utils';
 
 import './Workout.css';
 
@@ -28,6 +29,16 @@ class Workout extends React.Component {
 
   componentDidMount() {
     this.nextQuestion();
+  }
+
+  getQuestion() {
+    const Question = getRandomElement(this.props.questions);
+    return (
+      <Question
+        data={this.state.correctOption}
+        property={this.state.property}
+        selectedOptionId={this.state.selectedOptionId}
+      />);
   }
 
   handleOptionSelect(id) {
@@ -62,6 +73,7 @@ class Workout extends React.Component {
     }
   }
 
+
   updateScore(id) {
     const correctAnswer = id === this.state.correctOption.id;
     this.setState({
@@ -72,7 +84,6 @@ class Workout extends React.Component {
   }
 
   render() {
-    const Question = this.props.questionComponent;
     return this.state.correctOption ? (
       <div className="container vertical">
         <Exercise
@@ -83,11 +94,7 @@ class Workout extends React.Component {
           selectedOptionId={this.state.selectedOptionId}
         >
           <div className="question-container">
-            <Question
-              data={this.state.correctOption}
-              property={this.state.property}
-              selectedOptionId={this.state.selectedOptionId}
-            />
+            {this.getQuestion()}
           </div>
         </Exercise>
         <Score attempts={this.state.attempts} correctAnswers={this.state.correctAnswers} />
@@ -104,7 +111,7 @@ Workout.propTypes = {
   maxExercises: PropTypes.number.isRequired,
   maxDataIndex: PropTypes.number.isRequired,
   onWorkoutEnd: PropTypes.func.isRequired,
-  questionComponent: PropTypes.func.isRequired,
+  questions: PropTypes.arrayOf(PropTypes.func).isRequired,
   subjectData: PropTypes.shape({
     getOptions: PropTypes.func.isRequired,
     getRandomQuestion: PropTypes.func.isRequired,

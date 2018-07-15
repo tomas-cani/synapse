@@ -58,7 +58,7 @@ class Subject extends React.Component {
         maxExercises={this.state.maxExercises}
         maxDataIndex={this.props.difficultyLevels[this.state.difficulty - 1].max}
         onWorkoutEnd={this.handleWorkoutEnd}
-        questionComponent={this.props.questionComponent}
+        questions={this.props.questions}
         subjectData={this.subjectData}
       />
     );
@@ -118,7 +118,7 @@ class Subject extends React.Component {
 Subject.propTypes = {
   difficultyLevels: PropTypes.arrayOf(PropTypes.any.isRequired).isRequired,
   name: PropTypes.string.isRequired,
-  questionComponent: PropTypes.func.isRequired,
+  questions: PropTypes.arrayOf(PropTypes.func).isRequired,
   subjectData: PropTypes.arrayOf(PropTypes.any.isRequired).isRequired,
   subjectDataProperties: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
 };

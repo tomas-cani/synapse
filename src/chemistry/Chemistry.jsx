@@ -28,11 +28,13 @@ const difficultyLevels = [
   },
 ];
 
+const questions = [Element];
+
 const Chemistry = () => (
   <Subject
     difficultyLevels={difficultyLevels}
     name="Chemistry"
-    questionComponent={Element}
+    questions={questions}
     subjectData={periodicTable}
     subjectDataProperties={['id', 'name', 'number']}
   />
