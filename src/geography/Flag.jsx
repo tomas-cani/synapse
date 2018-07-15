@@ -2,9 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './Flag.css';
+import Question from '../question/Question';
 
 const Flag = props => (
-  <img className="Flag" src={props.data.flag} alt="Country flag" />
+  <Question>
+    <img className="Flag" src={props.data.flag} alt="Country flag" />
+  </Question>
 );
 
 Flag.propTypes = {

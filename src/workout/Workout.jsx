@@ -93,9 +93,7 @@ class Workout extends React.Component {
           property={this.state.property}
           selectedOptionId={this.state.selectedOptionId}
         >
-          <div className="question-container">
-            {this.getQuestion()}
-          </div>
+          {this.getQuestion()}
         </Exercise>
         <Score attempts={this.state.attempts} correctAnswers={this.state.correctAnswers} />
         <Progress

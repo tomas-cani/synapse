@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Paper from 'material-ui/Paper';
 
 import './Element.css';
+import Question from '../question/Question';
 
 class Element extends Component {
   resolveHidden(property, propertyName) {
@@ -15,11 +16,13 @@ class Element extends Component {
 
   render() {
     return (
-      <Paper className="Element container" zDepth={3}>
-        <p className="Element-number">{this.resolveHidden('number', 'number')}</p>
-        <h1 className="Element-symbol">{this.resolveHidden('symbol', 'id')}</h1>
-        <p className="Element-name">{this.resolveHidden('name', 'name')}</p>
-      </Paper>
+      <Question>
+        <Paper className="Element container" zDepth={3}>
+          <p className="Element-number">{this.resolveHidden('number', 'number')}</p>
+          <h1 className="Element-symbol">{this.resolveHidden('symbol', 'id')}</h1>
+          <p className="Element-name">{this.resolveHidden('name', 'name')}</p>
+        </Paper>
+      </Question>
     );
   }
 }
