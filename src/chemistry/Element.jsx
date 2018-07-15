@@ -28,7 +28,7 @@ class Element extends Component {
 }
 
 Element.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape.isRequired,
   property: PropTypes.string.isRequired,
   selectedOptionId: PropTypes.string,
 };
