@@ -1,9 +1,7 @@
 import React from 'react';
 
-// import periodicTable from '../chemistry/periodicTable';
 import countries from './countries';
 import Flag from './Flag';
-// import Element from '../chemistry/Element';
 import Subject from '../subject/Subject';
 
 const difficultyLevels = [
